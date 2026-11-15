@@ -1,0 +1,3 @@
+command line = \\az-cvo-hpc-20\sw\windows-x64-intel19-msvc142-md\AppliedMaterials\ACE+Suite\2025.0\ACE_SOLVER\bin\CFD-SOLVER -dtf Thermal_CVD -sim 1 -job
+defaulting to the CFD-ACE-SOLVER-INTEL-MPI solver
+running \\az-cvo-hpc-20\sw\windows-x64-intel19-msvc142-md\appliedmaterials\ace+suite\2025.0\ace_solver\bin\cfd-ace-solver-intel-mpi.exe -dtf Thermal_CVD.DTF  -sim 1

@@ -1,0 +1,466 @@
+ *******************************************************************************
+ *                                                                             *
+ * CCCCC FFFFF DDDD     AAA  CCCCC EEEEE   SSSS  OOO  L   V       V EEEEE RRR  *
+ * C     F     D   D   A   A C     E       S    O   O L    V     V  E     R  R *
+ * C     FFFF  D   D = AAAAA C     EEEE  = SSSS O   O L     V   V   EEEE  RRR  *
+ * C     F     D   D   A   A C     E          S O   O L      V V    E     R R  *
+ * CCCCC F     DDDD    A   A CCCCC EEEEE   SSSS  OOO  LLLLL   V     EEEEE R  R *
+ *                                                                             *
+ *       Version          : 2025.00.14.189                                     *
+ *       Build Date       : 09/24/2024 14:44:00                                *
+ *       Build OS         : Windows                                            *
+ *       Build OS Release : 10                                                 *
+ *       Build OS Version : 10.0.17763                                         *
+ *       Build Machine    : VAZ-WPA-108                                        *
+ *                                                                             *
+ *      Copyright(C) 1994-2025 Applied Materials. All Rights Reserved.         *
+ *                                                                             *
+ *******************************************************************************
+ 
+ 
+  ===============================================================
+     CFD-ACE-SOLVER Run Platform Information :
+  ===============================================================
+     Run Date           : 10/29/2026 11:08:10
+     Run OS             :
+     Run OS Release     :
+     Run OS Version     :
+     Run Machine        : AZ-US-EVDI-11
+  ===============================================================
+  ===============================================================
+ 
+    This simulation is running in double precision serial mode
+ 
+  =====================================
+    Summary of Input Information
+  =====================================
+    Problem has been set up using : CFD-ACE+
+  ================
+    Model Options
+  ================
+    Shared
+    -------
+    Model Name        : Thermal_CVD
+    Modules           : FLOW HEAT SPECIES_SOLUTION RADIATION
+    DTF File Name     : Thermal_CVD.DTF
+    Simulation Number = 1
+    Diagnostic        : OFF
+    Geometry          : Three Dimensional
+    Iterations        =         5000
+    Time Dependence   : Steady
+    Output Controls
+      Output Start    =            0
+      Output End      =     10000000
+      Output Interval =         5000
+ 
+  =======================================
+    Summary of 3D Grid Data
+  =======================================
+    Total No. of nodes       =      20795
+    No. of tri faces         =     219944
+    Total No. of faces       =     219944
+    No. of tetra cells       =     107918
+    Total No. of cells       =     107918
+ 
+   ====================================================================
+  |                         Summary of Properties                      |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |           1 |      1     | Pedestal  |    Solid    |     16538     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    2.329E+03 |
+         |      Conduct. |   Constant        |    5.000E+01 |
+         |      Sp. Heat |   Constant        |    7.020E+02 |
+         |       Absorb. | Opaque            |     -        |
+         |       Emmiss. | Set 1             |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |           2 |      2     | Showerhea |    Fluid    |     19431     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Kin_Theo    |     -        |
+         |      Conduct. |   Kinetic Theory  |     -        |
+         |      Sp. Heat |   Jannaf          |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |       Absorb. | Transparent       |     -        |
+         |       Emmiss. | Unity Emitter     |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |           5 |      3     | Chamber   |    Fluid    |     71949     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Kin_Theo    |     -        |
+         |      Conduct. |   Kinetic Theory  |     -        |
+         |      Sp. Heat |   Jannaf          |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |       Absorb. | Transparent       |     -        |
+         |       Emmiss. | Unity Emitter     |     -        |
+   ====================================================================
+   [Heat]: The calculation method for the heat transfer coefficient (HTC) is either:
+           (a) Not specified or
+           (b) Incorrectly specified in the DTF file.
+           The k_by_dr method (h = k/dr) for HTC calculation will be used by default.
+   [Chemistry]: Surface Reaction Summary requested
+ 
+   ====================================
+    Summary of Multi-Component Species
+   ====================================
+ 
+   The following Chemical Components have been defined:
+ 
+ ----------------------------------------------------------------- -----------------------------------
+ Species Name      Mol Wt.      A_VIS       B_VIS       Coll. Dia.   Energy      Acc. Coeff   Heat Acc
+ -----------------------------------------------------------------------------------------------------
+ 
+  SIH4               3.212E+01   1.405E-06   1.115E+02   4.084E+00   2.076E+02   9.317E-01   9.317E-01
+  AR                 3.995E+01   1.966E-06   1.475E+02   3.542E+00   9.330E+01   9.317E-01   9.317E-01
+  H2                 2.016E+00   6.890E-07   9.669E+01   2.827E+00   5.970E+01   9.317E-01   9.317E-01
+  SIH2               3.010E+01   1.405E-06   1.115E+02   3.803E+00   1.331E+02   9.317E-01   9.317E-01
+  SI2H6              6.222E+01   1.405E-06   1.115E+02   4.828E+00   3.013E+02   9.317E-01   9.317E-01
+  H3SISIH            6.020E+01   1.405E-06   1.115E+02   4.601E+00   3.126E+02   9.317E-01   9.317E-01
+  SI3H8              9.232E+01   1.405E-06   1.115E+02   5.562E+00   3.312E+02   9.317E-01   9.317E-01
+  H2SISIH2           6.020E+01   1.405E-06   1.115E+02   4.383E+00   3.126E+02   9.317E-01   9.317E-01
+  SI                 2.809E+01   1.405E-06   1.115E+02   2.910E+00   3.036E+03   9.317E-01   9.317E-01
+  SI(B)              2.809E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ -----------------------------------------------------------------------------------------------------
+ 
+ 
+   =================================
+    Summary of Multi-Step Reactions
+   =================================
+ 
+   Units : kmol-m-s-K (or eV); R_Heat (reaction heat) calculated at 298 K
+ 
+   Kinetics Algorithm : Stiff
+ 
+   No. of chemical reaction mechanisms :  1
+ 
+   Info for mechanism no.:  1
+ 
+   Reaction Name : Silane_decomp
+   Reaction Type : General Rate
+   No. of reaction steps:  10
+ 
+   ------------------------------------------------------------------------------
+ 
+     1 : SIH4 <-> H2 + SIH2                          R_Heat = 2.3724E+08 (J/kmol)
+         Rate_f :  0.312000E+10 * T **     1.700 * Exp(-0.28E+05/T) * [SIH4]
+         Rate_r : by Equilibrium
+ 
+     2 : SI2H6 <-> SIH4 + SIH2                       R_Heat = 2.2512E+08 (J/kmol)
+         Rate_f :  0.181000E+11 * T **     1.700 * Exp(-0.25E+05/T) * [SI2H6]
+         Rate_r : by Equilibrium
+ 
+     3 : SI2H6 <-> H2 + H3SISIH                      R_Heat = 2.3375E+08 (J/kmol)
+         Rate_f :  0.909000E+10 * T **     1.800 * Exp(-0.27E+05/T) * [SI2H6]
+         Rate_r : by Equilibrium
+ 
+     4 : SI3H8 <-> SIH2 + SI2H6                      R_Heat = 2.3013E+08 (J/kmol)
+         Rate_f :  0.697000E+13 * T **     1.000 * Exp(-0.27E+05/T) * [SI3H8]
+         Rate_r : by Equilibrium
+ 
+     5 : SI3H8 <-> SIH4 + H3SISIH                    R_Heat = 2.2663E+08 (J/kmol)
+         Rate_f :  0.373000E+13 * T **     1.000 * Exp(-0.26E+05/T) * [SI3H8]
+         Rate_r : by Equilibrium
+ 
+     6 : H2 + H3SISIH <-> SIH4 + SIH2                R_Heat =-8.6270E+06 (J/kmol)
+         Rate_f :  0.941000E+11 * T **     0.000 * Exp(-0.21E+04/T) * [H2]*[H3SISIH]
+         Rate_r :  0.943000E+08 * T **     1.100 * Exp(-0.29E+04/T) * [SIH4]*[SIH2]
+ 
+     7 : SIH4 + H3SISIH <-> SIH2 + SI2H6             R_Heat = 3.4980E+06 (J/kmol)
+         Rate_f :  0.173000E+12 * T **     0.400 * Exp(-0.45E+04/T) * [SIH4]*[H3SISIH]
+         Rate_r :  0.265000E+13 * T **     0.100 * Exp(-0.43E+04/T) * [SIH2]*[SI2H6]
+ 
+     8 : H3SISIH <-> H2SISIH2                        R_Heat =-5.0603E+07 (J/kmol)
+         Rate_f :  0.254000E+14 * T **    -0.200 * Exp(-0.27E+04/T) * [H3SISIH]
+         Rate_r : by Equilibrium
+ 
+     9 : H3SISIH <-> SIH4 + SI                       R_Heat = 1.7087E+08 (J/kmol)
+         Rate_f :  0.142000E+14 * T **     0.540 * Exp(-0.29E+05/T) * [H3SISIH]
+         Rate_r : by Equilibrium
+ 
+    10 : SI2H6 + SI <-> SIH2 + H3SISIH               R_Heat = 5.4249E+07 (J/kmol)
+         Rate_f :  0.130000E+13 * T **     0.000 * Exp(-0.63E+04/T) * [SI2H6]*[SI]
+         Rate_r : by Equilibrium
+ 
+   =====================================================================================
+ 
+ 
+   ==============================
+    Summary of Surface Reactions
+   ==============================
+ 
+   No. of surface reaction mechanisms :  1
+ 
+   Info for mechanism : Silicon_dep
+ 
+   No. of reaction steps:   1
+ 
+   -----------------------------------------------------
+ 
+ 
+   Info for Reaction Step:   1
+   Reaction Type : Sticking Coefficient
+ 
+   SIH4 ---> 2.0 H2 +SI(B)
+ 
+   Transferred Species Name: SI(B)
+   Transferred Species Density:       1.000000E+00
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       4.140000E-02
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       5.021000E+03
+     Concentration Exponents  :       [SIH4]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+   =====================================================================================
+ 
+   [Chemistry] : Volume  reaction rate computations start at iteration =            1
+ 
+   [Chemistry] : Surface reaction rate computations start at iteration =            1
+ 
+ ================================================================================
+                                          RAD_SNORD Statistics
+ ================================================================================
+ 
+  Could not read number of Refractive Index Sets.
+  Error reading Refractive Indices for sets
+ 
+           ----------------------
+            Radiation Parameters
+           ----------------------
+  Gray  model       = TRUE
+  SN-DOM            = TRUE
+  S6  scheme        = TRUE
+  sn_hrange scheme  = TRUE
+ 
+ 
+  % Relative Error in Moments
+ 
+       err_0m     =  1.000000E-05
+       err_1m_mu  =  1.811432E-05
+       err_1m_xi  =  1.811432E-05
+       err_1m_et  =  1.811432E-05
+       err_2m_mu  =  1.145897E-05
+       err_2m_xi  =  1.145897E-05
+       err_2m_et  =  1.145897E-05
+ 
+   =============================================================================
+  |                       Summary of Solver Control Parameters                  |
+   =============================================================================
+  | Prop. |  Diff.  |        Solver        |    Relaxation    |      Limits     |
+   -----------------------------------------------------------------------------
+  |       |         |  Name  |Sweep|Criter.| Inertial| Linear |  Min.  |  Max.  |
+   =============================================================================
+  |     U |Upwind   | CGS+Pre|   50|1.0E-04|  2.0E-01|   -    |-1.0E+20| 1.0E+20|
+  |     V |Upwind   | CGS+Pre|   50|1.0E-04|  2.0E-01|   -    |-1.0E+20| 1.0E+20|
+  |     W |Upwind   | CGS+Pre|   50|1.0E-04|  2.0E-01|   -    |-1.0E+20| 1.0E+20|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |P-Corr |    -    | AMG    |  100|1.0E-01|  2.0E-01|   -    |   -    |    -   |
+  |     P |    -    |    -   |  -  |   -   |   -     | 8.0E-01|-1.0E+20| 1.0E+20|
+  |   Rho |    -    |    -   |  -  |   -   |   -     | 1.0E+00| 1.0E-06| 1.0E+20|
+  |    Mu |    -    |    -   |  -  |   -   |   -     | 1.0E+00| 1.0E-10| 1.0E+02|
+  |    H0 |Upwind   | CGS+Pre|  150|1.0E-04|  5.0E-03|   -    |-1.0E+20| 1.0E+20|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |     T |    -    |    -   |  -  |   -   |   -     | 8.0E-01| 1.0E-10| 5.0E+03|
+  |Specie |Upwind   | Coupled|   10|1.0E-04|  1.0E-04|   -    | 0.0E+00| 1.0E+00|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |  Rad. |    -    | CGS+Pre|  100|1.0E-04|  0.0E+00|   -    |   -    |    -   |
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+   =============================================================================
+ 
+ 
+   =====================================
+   Summary of Geometry Data
+   =====================================
+ 
+   Smallest Volume   :   1.446223E-09
+ 
+   Largest  Volume   :   1.063610E-07
+ 
+   Smallest Angle    :   1.920783E+01 in zone  0 at face =      4340
+ 
+   Location of face number      4340 is x =  -1.4438E-01 y =   4.4898E-03 z =  -2.9443E-02
+ 
+   ==================================================================
+  |                      Summary of Porous Media                     |
+   ==================================================================
+   Total No. of VC-based Porous Media :   1
+   ==================================================================
+  |         VC   No.         |       VC Name       |   No. of Cells  |
+   ==================================================================
+  |               2          |          Showerhead |      19431      |
+   ------------------------------------------------------------------
+  |            Property Name |   Evaluation Method |           Value |
+   ------------------------------------------------------------------
+  |            Resist. Model |           Isotropic |        -        |
+  |                 Porosity |            Constant |       4.000E-01 |
+  |             Permeability |            Constant |       2.000E-07 |
+  |              Drag Factor |            Constant |       0.000E+00 |
+  |           Por.Therm.Cond |            Constant |       2.000E+02 |
+   =============================
+   Start of Iterative Cycle.....
+   =============================
+ 
+ 
+  SAVE and CONTINUE command from user
+ 
+  ==================================================
+   Outputting Summaries at Iteration #:          747
+  ==================================================
+  ========================================
+        Total Mass Flow Rate Summary
+  ----------------------------------------
+  |   Inflow   |   Outflow   |    Sum    |
+  ----------------------------------------
+   6.11935E-05  -6.04448E-05   7.48620E-07
+  ========================================
+ 
+ 
+  ================================================================================================
+  Boundary-by-Boundary Radiation Flux Summary (Watts)
+  ================================================================================================
+      Name                Key  Type          RAD EMIT    RAD ABSORB   RAD to HEAT  RAD to SYS*
+  ================================================================================================
+  SHOWERHEAD_INLET         12  Inlet        8.8618E+00   1.4035E+02   1.3149E+02   0.0000E+00
+  PURGE_INLET              37  Inlet        2.5842E-01   2.6989E+00   2.4405E+00   0.0000E+00
+  OUTLET                   38  Outlet       1.8724E-01   2.0215E-01   1.4913E-02   0.0000E+00
+  FACE_2(1)                 7  Interface    1.3695E+01   7.7884E+00  -5.9066E+00  -5.9066E+00
+  FACE_2(2)                 7  Interface    1.3695E+01   7.7884E+00  -5.9066E+00  -5.9066E+00
+  HEATED_PEDESTAL_SURF      8  Interface    9.9619E+01   3.7083E+01  -6.2536E+01  -6.2536E+01
+  HEATED_PEDESTAL_SURF      8  Interface    9.9619E+01   3.7083E+01  -6.2536E+01  -6.2536E+01
+  FACE_4(1)                 9  Interface    1.9261E+01   2.6350E+00  -1.6626E+01  -1.6626E+01
+  FACE_4(2)                 9  Interface    1.9261E+01   2.6350E+00  -1.6626E+01  -1.6626E+01
+  WAFER(1)                 11  Interface    9.9836E+01   1.8841E+01  -8.0995E+01  -8.0995E+01
+  WAFER(2)                 11  Interface    9.9836E+01   1.8841E+01  -8.0995E+01  -8.0995E+01
+  FACE_8                   13  Wall         2.8341E+00   3.0131E+01   2.7297E+01   2.7297E+01
+  FACE_15                  20  Wall         2.0798E+00   1.5904E+01   1.3824E+01   0.0000E+00
+  FACE_18                  23  Wall         8.7043E+00   1.5917E+01   7.2126E+00   7.2126E+00
+  FACE_19                  24  Wall         2.1276E+00   2.4405E+00   3.1289E-01   3.1289E-01
+  FACE_23                  28  Wall         1.8077E+02   1.9085E+02   1.0080E+01   1.0080E+01
+  FACE_24                  29  Wall         2.4103E+00   2.5112E+00   1.0090E-01   1.0090E-01
+  FACE_25                  30  Wall         1.4204E+01   1.5330E+02   1.3910E+02   0.0000E+00
+  ================================================================================================
+   Total Rad Flux Imbalance                 6.8726E+02   6.8700E+02  -2.5829E-01  -2.8712E+02
+   Total energy absorbed by media                                                  0.0000E+00
+   Total Heat Contributed to Thermal System                                       -2.8712E+02
+  ================================================================================================
+ * RAD to HEAT = (RAD ABSORB) - (RAD EMIT)
+ * RAD to SYS = (RAD to HEAT), except on isothermal walls, where it is set to zero.
+  ================================================================================================
+ 
+ 
+  ==========================
+  The Total Heat Summary (W)
+  ==========================
+   Total_in  from Surface  + Total_in from Volume   =     TOTAL_IN
+          9.0544E+02               8.9927E-03           9.0545E+02
+   ---------------------------------------------------------------
+   Total_out  from Surface + Total_out from Volume  =    TOTAL_OUT
+          1.7160E+03               0.0000E+00           1.7160E+03
+   ---------------------------------------------------------------
+      Net from Surface     +    Net from Volume     =    TOTAL_IMB
+         -8.1058E+02               8.9927E-03          -8.1057E+02
+ 
+  Total Heat Imbalance is more than 1% of total heat in. The simulation may not
+  be fully converged and the energy summary may not be accurate.
+ 
+  ==================================================
+   End of Outputting Summaries at Iteration #:          747
+  ==================================================
+  ==================================================
+   Outputting Summaries at Iteration #:         5000
+  ==================================================
+  ========================================
+        Total Mass Flow Rate Summary
+  ----------------------------------------
+  |   Inflow   |   Outflow   |    Sum    |
+  ----------------------------------------
+   6.11935E-05  -6.03701E-05   8.23329E-07
+  ========================================
+ 
+ 
+  ================================================================================================
+  Boundary-by-Boundary Radiation Flux Summary (Watts)
+  ================================================================================================
+      Name                Key  Type          RAD EMIT    RAD ABSORB   RAD to HEAT  RAD to SYS*
+  ================================================================================================
+  SHOWERHEAD_INLET         12  Inlet        8.8618E+00   1.4078E+02   1.3191E+02   0.0000E+00
+  PURGE_INLET              37  Inlet        2.5842E-01   2.6984E+00   2.4400E+00   0.0000E+00
+  OUTLET                   38  Outlet       1.8846E-01   2.0358E-01   1.5121E-02   0.0000E+00
+  FACE_2(1)                 7  Interface    1.3741E+01   7.8063E+00  -5.9345E+00  -5.9345E+00
+  FACE_2(2)                 7  Interface    1.3741E+01   7.8063E+00  -5.9345E+00  -5.9345E+00
+  HEATED_PEDESTAL_SURF      8  Interface    9.9909E+01   3.7179E+01  -6.2730E+01  -6.2730E+01
+  HEATED_PEDESTAL_SURF      8  Interface    9.9909E+01   3.7179E+01  -6.2730E+01  -6.2730E+01
+  FACE_4(1)                 9  Interface    1.9319E+01   2.6435E+00  -1.6675E+01  -1.6675E+01
+  FACE_4(2)                 9  Interface    1.9319E+01   2.6435E+00  -1.6675E+01  -1.6675E+01
+  WAFER(1)                 11  Interface    1.0012E+02   1.8892E+01  -8.1232E+01  -8.1232E+01
+  WAFER(2)                 11  Interface    1.0012E+02   1.8892E+01  -8.1232E+01  -8.1232E+01
+  FACE_8                   13  Wall         2.8342E+00   3.0222E+01   2.7388E+01   2.7388E+01
+  FACE_15                  20  Wall         2.0798E+00   1.5963E+01   1.3884E+01   0.0000E+00
+  FACE_18                  23  Wall         8.7610E+00   1.5964E+01   7.2030E+00   7.2030E+00
+  FACE_19                  24  Wall         2.1009E+00   2.4367E+00   3.3578E-01   3.3578E-01
+  FACE_23                  28  Wall         1.8146E+02   1.9141E+02   9.9538E+00   9.9538E+00
+  FACE_24                  29  Wall         2.4313E+00   2.5300E+00   9.8767E-02   9.8767E-02
+  FACE_25                  30  Wall         1.4204E+01   1.5386E+02   1.3965E+02   0.0000E+00
+  ================================================================================================
+   Total Rad Flux Imbalance                 6.8936E+02   6.8911E+02  -2.5731E-01  -2.8816E+02
+   Total energy absorbed by media                                                  0.0000E+00
+   Total Heat Contributed to Thermal System                                       -2.8816E+02
+  ================================================================================================
+ * RAD to HEAT = (RAD ABSORB) - (RAD EMIT)
+ * RAD to SYS = (RAD to HEAT), except on isothermal walls, where it is set to zero.
+  ================================================================================================
+ 
+ 
+  ==========================
+  The Total Heat Summary (W)
+  ==========================
+   Total_in  from Surface  + Total_in from Volume   =     TOTAL_IN
+          9.0570E+02               8.2411E-03           9.0571E+02
+   ---------------------------------------------------------------
+   Total_out  from Surface + Total_out from Volume  =    TOTAL_OUT
+          1.7170E+03               0.0000E+00           1.7170E+03
+   ---------------------------------------------------------------
+      Net from Surface     +    Net from Volume     =    TOTAL_IMB
+         -8.1132E+02               8.2411E-03          -8.1131E+02
+ 
+  Total Heat Imbalance is more than 1% of total heat in. The simulation may not
+  be fully converged and the energy summary may not be accurate.
+ 
+  ==================================================
+   End of Outputting Summaries at Iteration #:         5000
+  ==================================================
+ 
+   =============================
+   End   of Iterative Cycle.....
+   =============================
+ 
+ 
+         Final Time   Elapsed CPU Time=  7.351880E+04 Delta-time=  7.351880E+04
+ 
+         Final Time   Elapsed Wall Clock=  7.352407E+04 Delta-Wall Clock=  7.352407E+04
+ 
+  Normal Termination
