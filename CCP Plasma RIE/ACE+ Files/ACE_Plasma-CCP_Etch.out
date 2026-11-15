@@ -1,0 +1,1021 @@
+ *******************************************************************************
+ *                                                                             *
+ * CCCCC FFFFF DDDD     AAA  CCCCC EEEEE   SSSS  OOO  L   V       V EEEEE RRR  *
+ * C     F     D   D   A   A C     E       S    O   O L    V     V  E     R  R *
+ * C     FFFF  D   D = AAAAA C     EEEE  = SSSS O   O L     V   V   EEEE  RRR  *
+ * C     F     D   D   A   A C     E          S O   O L      V V    E     R R  *
+ * CCCCC F     DDDD    A   A CCCCC EEEEE   SSSS  OOO  LLLLL   V     EEEEE R  R *
+ *                                                                             *
+ *       Version          : 2025.00.14.189                                     *
+ *       Build Date       : 09/24/2024 14:44:00                                *
+ *       Build OS         : Windows                                            *
+ *       Build OS Release : 10                                                 *
+ *       Build OS Version : 10.0.17763                                         *
+ *       Build Machine    : VAZ-WPA-108                                        *
+ *                                                                             *
+ *      Copyright(C) 1994-2025 Applied Materials. All Rights Reserved.         *
+ *                                                                             *
+ *******************************************************************************
+ 
+ 
+  ===============================================================
+     CFD-ACE-SOLVER Run Platform Information :
+  ===============================================================
+     Run Date           : 11/15/2026 15:11:45
+     Run OS             :
+     Run OS Release     :
+     Run OS Version     :
+     Run Machine        : ATUL-LEGION
+  ===============================================================
+  ===============================================================
+ 
+    This simulation is running in double precision serial mode
+ 
+ License Warning
+ License for feature ACE will expire in 0 days
+ License Warning
+ License for feature ACE_PLASMA will expire in 0 days
+ License Warning
+ License for feature ACE_ELECTRIC will expire in 0 days
+ License Warning
+ License for feature ACE_CHEMISTRY will expire in 0 days
+  =====================================
+    Summary of Input Information
+  =====================================
+    Problem has been set up using : CFD-ACE+
+  ================
+    Model Options
+  ================
+    Shared
+    -------
+    Model Name        : ACE_Plasma-CCP_Etch
+    Modules           : FLOW SPECIES_SOLUTION ELECTRIC PLASMA
+    DTF File Name     : ACE_Plasma-CCP_Etch.DTF
+    Simulation Number = 1
+    Diagnostic        : OFF
+    Geometry          : Two Dimensional Axisymmetric
+    Iterations        =            3
+    Time Dependence   : Transient with Standard Time Stepping
+    Output Controls
+      Output Start    =            0
+      Output End      =     10000000
+      Output Interval =        10000
+    Transient Time Step
+      Standard
+        No. of Steps  =          100
+        Time Step     =   1.0000E-05
+      Time Accuracy   : Euler 1st Order
+ 
+  =======================================
+    Summary of 2D Axisymmetric Grid Data
+  =======================================
+    Total No. of nodes       =       5427
+    No. of line faces        =      10657
+    Total No. of faces       =      10657
+    No. of quad cells        =       5231
+    Total No. of cells       =       5231
+ 
+   ====================================================================
+  |                         Summary of Properties                      |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          22 |      1     | Si-Ring   |    Solid    |       182     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    2.329E+03 |
+         |  Rel. Permtt. |   Constant        |    1.200E+01 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Perfect Insul.  |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          23 |      1     | SiO2      |    Solid    |       261     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    2.200E+03 |
+         |  Rel. Permtt. |   Constant        |    3.900E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Perfect Insul.  |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          24 |      1     | Plasma    |    Fluid    |       267     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          25 |      1     | Plasma    |    Fluid    |       424     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          26 |      1     | Plasma    |    Fluid    |       507     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          27 |      1     | Plasma    |    Fluid    |       507     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          28 |      1     | Plasma    |    Fluid    |       623     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          29 |      1     | Plasma    |    Fluid    |       801     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          30 |      1     | Plasma    |    Fluid    |       801     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          31 |      1     | Plasma    |    Fluid    |       858     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |     Diffusion | Kinetic Theory    |     -        |
+         |      Mobility |    Blanc Law      |     -        |
+         |   Coll. Freq. |   Funct of Te & P |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+ 
+   ====================================
+    Summary of Multi-Component Species
+   ====================================
+ 
+   The following Chemical Components have been defined:
+ 
+ ----------------------------------------------------------------- -----------------------------------
+ Species Name      Mol Wt.      A_VIS       B_VIS       Coll. Dia.   Energy      Acc. Coeff   Heat Acc
+ -----------------------------------------------------------------------------------------------------
+ 
+  AR                 3.995E+01   1.966E-06   1.475E+02   3.330E+00   1.365E+02   9.317E-01   9.317E-01
+  AR+                3.995E+01   1.966E-06   1.475E+02   3.330E+00   1.365E+02   9.317E-01   9.317E-01
+  AR*                3.995E+01   2.200E-06   3.793E+02   3.540E+00   9.330E+01   9.317E-01   9.317E-01
+  CF4                8.800E+01   1.726E-06   3.878E+02   4.662E+00   1.340E+02   9.317E-01   9.317E-01
+  CF3+               6.901E+01   1.405E-06   1.115E+02   4.320E+00   1.210E+02   9.317E-01   9.317E-01
+  F                  1.900E+01   1.405E-06   1.115E+02   2.968E+00   1.126E+02   9.317E-01   9.317E-01
+  CF2+               5.001E+01   1.405E-06   1.115E+02   3.980E+00   1.080E+02   9.317E-01   9.317E-01
+  CF+                3.101E+01   1.405E-06   1.115E+02   3.300E+00   1.250E+02   9.317E-01   9.317E-01
+  CF3                6.901E+01   1.868E-06   3.824E+02   4.320E+00   1.210E+02   9.317E-01   9.317E-01
+  CF2                5.001E+01   1.905E-06   3.808E+02   3.977E+00   1.080E+02   9.317E-01   9.317E-01
+  CF                 3.101E+01   2.136E-06   3.830E+02   3.635E+00   9.420E+01   9.317E-01   9.317E-01
+  C                  1.201E+01   1.405E-06   1.115E+02   3.385E+00   3.060E+01   9.317E-01   9.317E-01
+  F2                 3.800E+01   1.405E-06   1.115E+02   3.610E+00   1.210E+02   9.317E-01   9.317E-01
+  F+                 1.900E+01   1.405E-06   1.115E+02   2.968E+00   1.126E+02   9.317E-01   9.317E-01
+  F-                 1.900E+01   1.405E-06   1.115E+02   2.968E+00   1.126E+02   9.317E-01   9.317E-01
+ -----------------------------------------------------------------------------------------------------
+ 
+ 
+   =================================
+    Summary of Multi-Step Reactions
+   =================================
+ 
+   Units : kmol-m-s-K (or eV); R_Heat (reaction heat) calculated at 298 K
+ 
+   Kinetics Algorithm : Non-Stiff
+ 
+   No. of chemical reaction mechanisms :  1
+ 
+   Info for mechanism no.:  1
+ 
+   Reaction Name : ARCF4
+   Reaction Type : General Rate
+   No. of reaction steps:  49
+ 
+   ------------------------------------------------------------------------------
+ 
+     1 : CF4 + e --> CF3+ + F + 2 e                  R_Heat = 1.4855E+01 (eV)
+         Rate_f :  0.250135E+13 * Te**     1.355 * Exp(   -15.599/Te) * [CF4]*[e]
+ 
+     2 : CF4 + e --> 2.0 F + CF2+ + 2 e              R_Heat = 2.1074E+01 (eV)
+         Rate_f :  0.126724E+13 * Te**     0.810 * Exp(   -23.164/Te) * [CF4]*[e]
+ 
+     3 : CF4 + e --> 3.0 F + CF+ + 2 e               R_Heat = 2.4048E+01 (eV)
+         Rate_f :  0.164368E+13 * Te**     0.775 * Exp(   -33.101/Te) * [CF4]*[e]
+ 
+     4 : CF3 + e --> F + CF2+ + 2 e                  R_Heat = 1.5455E+01 (eV)
+         Rate_f :  0.542130E+13 * Te**     0.411 * Exp(   -17.463/Te) * [CF3]*[e]
+ 
+     5 : CF3 + e --> 2.0 F + CF+ + 2 e               R_Heat = 1.8429E+01 (eV)
+         Rate_f :  0.303860E+13 * Te**     0.574 * Exp(   -21.174/Te) * [CF3]*[e]
+ 
+     6 : CF2 + e --> F + CF+ + 2 e                   R_Heat = 1.4619E+01 (eV)
+         Rate_f :  0.285310E+13 * Te**     0.670 * Exp(   -14.309/Te) * [CF2]*[e]
+ 
+     7 : CF4 + e --> F + CF3 + e                     R_Heat = 5.6195E+00 (eV)
+         Rate_f :  0.196169E+13 * Te**     0.691 * Exp(   -14.370/Te) * [CF4]*[e]
+ 
+     8 : CF4 + e --> 2.0 F + CF2 + e                 R_Heat = 9.4293E+00 (eV)
+         Rate_f :  0.133771E+12 * Te**     0.994 * Exp(   -14.775/Te) * [CF4]*[e]
+ 
+     9 : CF4 + e --> 3.0 F + CF + e                  R_Heat = 1.4783E+01 (eV)
+         Rate_f :  0.439016E+13 * Te**    -0.165 * Exp(   -28.261/Te) * [CF4]*[e]
+ 
+    10 : CF3 + e --> F + CF2 + e                     R_Heat = 3.8098E+00 (eV)
+         Rate_f :  0.196169E+13 * Te**     0.691 * Exp(    -3.650/Te) * [CF3]*[e]
+ 
+    11 : CF3 + e --> 2.0 F + CF + e                  R_Heat = 9.1631E+00 (eV)
+         Rate_f :  0.133771E+12 * Te**     0.993 * Exp(    -9.040/Te) * [CF3]*[e]
+ 
+    12 : CF2 + e --> F + CF + e                      R_Heat = 5.3533E+00 (eV)
+         Rate_f :  0.196169E+13 * Te**     0.691 * Exp(    -5.390/Te) * [CF2]*[e]
+ 
+    13 : CF + e --> F + C + e                        R_Heat = 5.6050E+00 (eV)
+         Rate_f :  0.196169E+12 * Te**     0.691 * Exp(    -5.690/Te) * [CF]*[e]
+ 
+    14 : F2 + e --> 2.0 F + e                        R_Heat = 1.6453E+00 (eV)
+         Rate_f :  0.236764E+13 * Te**     1.227 * Exp(    -5.550/Te) * [F2]*[e]
+ 
+    15 : CF2 + e --> CF2+ + 2 e                      R_Heat = 1.1645E+01 (eV)
+         Rate_f :  0.245196E+13 * Te**     0.803 * Exp(    -9.400/Te) * [CF2]*[e]
+ 
+    16 : CF + e --> CF+ + 2 e                        R_Heat = 9.2659E+00 (eV)
+         Rate_f :  0.218093E+13 * Te**     0.867 * Exp(   -11.198/Te) * [CF]*[e]
+ 
+    17 : F + e --> F+ + 2 e                          R_Heat =-4.9820E-03 (eV)
+         Rate_f :  0.283201E+13 * Te**     0.433 * Exp(   -17.586/Te) * [F]*[e]
+ 
+    18 : CF3 + e --> CF3+ + 2 e                      R_Heat = 9.2358E+00 (eV)
+         Rate_f :  0.730590E+12 * Te**     0.908 * Exp(    -9.272/Te) * [CF3]*[e]
+ 
+    19 : CF3+ + e --> F + CF2                        R_Heat =-5.4259E+00 (eV)
+         Rate_f :  0.361380E+14 * Te**     0.000 * Exp(    -5.550/Te) * [CF3+]*[e]
+ 
+    20 : CF2+ + e --> F + CF                         R_Heat =-6.2918E+00 (eV)
+         Rate_f :  0.361380E+14 * Te**     0.000 * Exp(    -5.550/Te) * [CF2+]*[e]
+ 
+    21 : CF+ + e --> F + C                           R_Heat =-3.6609E+00 (eV)
+         Rate_f :  0.361380E+14 * Te**     0.000 * Exp(    -5.550/Te) * [CF+]*[e]
+ 
+    22 : CF3 + F2 --> CF4 + F                        R_Heat =-3.8351E+08 (J/kmol)
+         Rate_f :  0.233813E+10 * T **     0.500 * Exp(-0.13E+00/T) * [CF3]*[F2]
+ 
+    23 : CF2 + F2 --> F + CF3                        R_Heat =-2.0888E+08 (J/kmol)
+         Rate_f :  0.213335E+11 * T **     0.500 * Exp(-0.92E-01/T) * [CF2]*[F2]
+ 
+    24 : CF3 + F+ --> CF3+ + F                       R_Heat = 8.9174E+08 (J/kmol)
+         Rate_f :  0.602300E+11 * T **     0.000 * Exp(-0.20E+01/T) * [CF3]*[F+]
+ 
+    25 : CF4 + F+ --> CF3+ + F2                      R_Heat = 1.2752E+09 (J/kmol)
+         Rate_f :  0.602300E+11 * T **     0.000 * Exp(-0.20E+01/T) * [CF4]*[F+]
+ 
+    26 : CF4 + e --> CF3 + F-                        R_Heat = 2.2200E+00 (eV)
+         Rate_f :  0.965487E+11 * Te**    -0.429 * Exp(    -4.139/Te) * [CF4]*[e]
+ 
+    27 : F2 + e --> F + F-                           R_Heat =-1.7542E+00 (eV)
+         Rate_f :  0.239354E+13 * Te**    -1.376 * Exp(    -0.226/Te) * [F2]*[e]
+ 
+    28 : CF4 + e --> CF3+ + F- + e                   R_Heat = 1.1456E+01 (eV)
+         Rate_f :  0.316990E+10 * Te**     0.768 * Exp(   -14.687/Te) * [CF4]*[e]
+ 
+    29 : F- + e --> F + 2 e                          R_Heat = 3.3994E+00 (eV)
+         Rate_f :  0.328615E+12 * Te**     1.175 * Exp(    -3.296/Te) * [F-]*[e]
+ 
+    30 : CF4 + F- --> CF4 + F + e                    R_Heat = 3.3994E+00 (eV)
+         Rate_f :  0.128453E+14 * T **     1.131 * Exp(-0.14E+01/T) * [CF4]*[F-]
+ 
+    31 : CF3 + F- --> CF4 + e                        R_Heat =-2.2200E+00 (eV)
+         Rate_f :  0.301150E+12 * T **     0.000 * Exp( 0.00E+00/T) * [CF3]*[F-]
+ 
+    32 : CF2 + F- --> CF3 + e                        R_Heat =-4.1037E-01 (eV)
+         Rate_f :  0.301150E+12 * T **     0.000 * Exp( 0.00E+00/T) * [CF2]*[F-]
+ 
+    33 : CF + F- --> CF2 + e                         R_Heat =-1.9538E+00 (eV)
+         Rate_f :  0.301150E+12 * T **     0.000 * Exp( 0.00E+00/T) * [CF]*[F-]
+ 
+    34 : C + F- --> CF + e                           R_Heat =-2.2055E+00 (eV)
+         Rate_f :  0.301150E+12 * T **     0.000 * Exp( 0.00E+00/T) * [C]*[F-]
+ 
+    35 : F + F- --> F2 + e                           R_Heat = 1.7542E+00 (eV)
+         Rate_f :  0.843220E+11 * T **     0.000 * Exp(-0.19E+01/T) * [F]*[F-]
+ 
+    36 : CF3+ + F- --> F + CF3                       R_Heat =-5.6321E+08 (J/kmol)
+         Rate_f :  0.301150E+15 * T **     0.000 * Exp( 0.00E+00/T) * [CF3+]*[F-]
+ 
+    37 : CF2+ + F- --> F + CF2                       R_Heat =-7.9571E+08 (J/kmol)
+         Rate_f :  0.963680E+14 * T **     0.000 * Exp( 0.00E+00/T) * [CF2+]*[F-]
+ 
+    38 : CF+ + F- --> F + CF                         R_Heat =-5.6611E+08 (J/kmol)
+         Rate_f :  0.963680E+14 * T **     0.000 * Exp( 0.00E+00/T) * [CF+]*[F-]
+ 
+    39 : F+ + F- --> 2.0 F                           R_Heat = 3.2853E+08 (J/kmol)
+         Rate_f :  0.240920E+15 * T **     0.000 * Exp( 0.00E+00/T) * [F+]*[F-]
+ 
+    40 : AR + e --> AR+ + 2 e                        R_Heat = 1.5822E+01 (eV)
+         Rate_f : Kf(cross section integral)[AR]*[e]
+ 
+    41 : AR + e --> AR* + e                          R_Heat = 1.1423E+01 (eV)
+         Rate_f :  0.722760E+13 * Te**     0.000 * Exp(   -11.940/Te) * [AR]*[e]
+ 
+    42 : AR* + e --> AR+ + 2 e                       R_Heat = 4.3991E+00 (eV)
+         Rate_f :  0.180690E+15 * Te**     0.000 * Exp(    -5.220/Te) * [AR*]*[e]
+ 
+    43 : AR + e --> AR + e                           M_Trans= 2.6508E+03 (J/eV)
+         Rate_f : Kf(cross section integral)[AR]*[e]
+ 
+    44 : CF4 + AR+ --> CF3+ + F + AR                 R_Heat =-9.3312E+07 (J/kmol)
+         Rate_f :  0.289104E+12 * T **     0.000 * Exp( 0.00E+00/T) * [CF4]*[AR+]
+ 
+    45 : CF3 + AR+ --> F + CF2+ + AR                 R_Heat =-3.5444E+07 (J/kmol)
+         Rate_f :  0.301150E+12 * T **     0.000 * Exp( 0.00E+00/T) * [CF3]*[AR+]
+ 
+    46 : CF2 + AR+ --> F + CF+ + AR                  R_Heat =-1.1609E+08 (J/kmol)
+         Rate_f :  0.301150E+12 * T **     0.000 * Exp( 0.00E+00/T) * [CF2]*[AR+]
+ 
+    47 : CF4 + AR* --> F + CF3 + AR                  R_Heat =-5.6005E+08 (J/kmol)
+         Rate_f :  0.361380E+11 * T **     0.000 * Exp( 0.00E+00/T) * [CF4]*[AR*]
+ 
+    48 : CF3 + AR* --> F + CF2 + AR                  R_Heat =-7.3468E+08 (J/kmol)
+         Rate_f :  0.361380E+11 * T **     0.000 * Exp( 0.00E+00/T) * [CF3]*[AR*]
+ 
+    49 : CF2 + AR* --> F + CF + AR                   R_Heat =-5.8574E+08 (J/kmol)
+         Rate_f :  0.361380E+11 * T **     0.000 * Exp( 0.00E+00/T) * [CF2]*[AR*]
+ 
+   =====================================================================================
+ 
+ 
+   ==============================
+    Summary of Surface Reactions
+   ==============================
+ 
+   No. of surface reaction mechanisms :  1
+ 
+   Info for mechanism : ARCF4
+ 
+   No. of reaction steps:   8
+ 
+   -----------------------------------------------------
+ 
+ 
+   Info for Reaction Step:   1
+   Reaction Type : Sticking Coefficient
+ 
+   CF3+ --->CF3
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [CF3+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   2
+   Reaction Type : Sticking Coefficient
+ 
+   CF2+ --->CF2
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [CF2+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   3
+   Reaction Type : Sticking Coefficient
+ 
+   CF+ --->CF
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [CF+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   4
+   Reaction Type : Sticking Coefficient
+ 
+   F- --->F
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [F-]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   5
+   Reaction Type : Sticking Coefficient
+ 
+    2.0 F --->F2
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       5.000000E-01
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [F]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   6
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ --->AR
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   7
+   Reaction Type : Sticking Coefficient
+ 
+   AR* --->AR
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR*]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   8
+   Reaction Type : Sticking Coefficient
+ 
+   F+ --->F
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [F+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+   =====================================================================================
+ 
+   [Chemistry] : Volume  reaction rate computations start at time step =            1
+ 
+   [Chemistry] : Surface reaction rate computations start at time step =            1
+ 
+   [Plasma] : CCP Time Step used to integrate Electric Potential
+ 
+   [Plasma] : CCP Time Step used to integrate Electrons(density,temperature), Ions
+ 
+   [Plasma] : Shared Time Step used in the integration of Neutrals
+ 
+  [Plasma] : A more responsive algorithm to meet Target CCP Power is active
+ 
+   [Plasma] : The upper limit of the voltage ratio between CCP cycles is set to   1.025
+ 
+   [Plasma] : The lower limit of the voltage ratio between CCP cycles is set to  0.975
+ 
+   [Plasma] : plasma_ccp_recompute_ground set to False by default
+ 
+   [Plasma] : New algorithm to compute Bias at Electrodes is active
+ 
+   [Plasma] : The capacitance (in nF) used to compute bias is    500.000
+ 
+   [Plasma] : Strong magnetic fields are NOT present in this simulation
+ 
+   [Plasma] : Starting v2019.5, output files  CCP.BC.CurDens, CCP.BC.Power are NOT written out by default
+            : To enable, use Out/Summaries/Plasma(CCP) checkbox for CCP Cycle Current Density and Power Summary
+ 
+  [Plasma] : output_ccp_J_V =      F ncycle_ccp_J_V =   10
+ 
+   [Plasma] : Log file(s) with extension .CCPavg are written every    1 CCP cycle
+ 
+   [Plasma] : Fixed Discharge Power is read from MO->Plasma for this simulation
+ 
+   [Plasma] : Target Fixed Discharge Power in Watts  =   500
+ 
+   [Plasma] : The algorithm to meet target power starts at the (fastest) CCP cycle    11
+ 
+   [Plasma] : The conventional algorithm limits voltage change between CCP cycles to +/-   1 Volts
+ 
+   [Plasma] : Set the multi frequency power target to algorithm number 1 by default
+ 
+   [Plasma] : Flag to enforce charge conservation for Fast CCP is FALSE by default
+ 
+   [Plasma] : Solving Te equation at dt_CCP time step
+ 
+   [Plasma] : Regular treatment of charge BC
+ 
+   [Plasma] : Regular treatment for MEP
+ 
+   [Plasma] : relaxation for surface charge is set to 1.0 by default
+ 
+   [Plasma] : Minimum angle recommended on the mesh is 10 degrees by default
+ 
+   [Plasma] : ccp_frequent_update is turned off.
+   [Plasma] : EEDF_TYPE is set to  0 to assume Maxwellian Electron Energy Distribution
+    -> mcplas: Writing Ion Angular and Energy Distributions
+    -> mcplas: Minimum number of particles per cell for species AR    is         5
+    -> mcplas: Minimum number of particles per cell for species AR+   is       100
+    -> mcplas: Minimum number of particles per cell for species AR*   is         5
+    -> mcplas: Minimum number of particles per cell for species CF4   is         5
+    -> mcplas: Minimum number of particles per cell for species CF3+  is       100
+    -> mcplas: Minimum number of particles per cell for species F     is         5
+    -> mcplas: Minimum number of particles per cell for species CF2+  is       100
+    -> mcplas: Minimum number of particles per cell for species CF+   is       100
+    -> mcplas: Minimum number of particles per cell for species CF3   is         5
+    -> mcplas: Minimum number of particles per cell for species CF2   is         5
+    -> mcplas: Minimum number of particles per cell for species CF    is         5
+    -> mcplas: Minimum number of particles per cell for species C     is         5
+    -> mcplas: Minimum number of particles per cell for species F2    is         5
+    -> mcplas: Minimum number of particles per cell for species F+    is       100
+    -> mcplas: Minimum number of particles per cell for species F-    is       100
+    -> mcplas: MonteCarloTransport IS  active in VC named : Si-Ring
+    -> mcplas: MonteCarloTransport IS  active in VC named : SiO2
+    -> mcplas: MonteCarloTransport IS  active in VC named : Plasma
+    -> mcplas: MonteCarloTransport IS  active in VC named : Plasma
+    -> mcplas: MonteCarloTransport IS  active in VC named : Plasma
+    -> mcplas: MonteCarloTransport IS  active in VC named : Plasma
+    -> mcplas: MonteCarloTransport IS  active in VC named : Plasma
+    -> mcplas: MonteCarloTransport IS  active in VC named : Plasma
+    -> mcplas: time_niter_mcplas is set by default to 10
+    -> mcplas: time_end_mcplas set by default to 1 ms
+             : NOTE- For time-varying electric fields this is reset internally
+    -> mcplas: dtmin_mcplas set by default to 1 ns
+    -> mcplas: dtmax_mcplas set by default to 100 ns
+    -> mcplas: ntheta_mcplas set by default to 8 divisions
+    -> mcplas: ndt_forces_mcplas set by default to 1 time step
+    -> mcplas: tref_mcplas set by default to 300 K
+    -> mcplas: tref_mcplas set by default to .FALSE.
+    -> mcplas: rhoref_mcplas set by default to 1e-6 kg/m3
+    -> mcplas: Particles with energy below  0.00000E+00 eV will be removed from tracking list.
+    -> mcplas: Flag to enable reading IEADF locations from Feature Scale Input in GUI is set to FALSE by default
+    -> mcplas: Flag to enable improvements to address ADF peak distortion is set to TRUE by default
+    -> mcplas: Flag to enable reading of recorded e-fields from previously written binary output file set to F
+    -> mcplas: Flag to enable writing of recorded e-fields to binary output file is set to T
+    -> mcplas: MC box size control from gui is set to : T
+    -> mcplas: Setting length of MC sub-mesh in x-direction to be  0.00000E+00 m
+    -> mcplas: Setting width of MC sub-mesh in y-direction to be  0.00000E+00 m
+    -> mcplas: Setting extent of MC sub-mesh in x-direction to be  0.00000E+00 m
+    -> mcplas: Setting extent of MC sub-mesh in y-direction to be  0.00000E+00 m
+    -> mcplas: Override dycriterion calculation by solver set to be FALSE by default
+    -> mcplas: IEHD, IAHD calculation and output have been turned on.
+    -> mcplas: V2024 (instead of V2017) IEHD, IAHD calculation turned on.
+    -> mcplas: IEAD output have been turned on.
+    -> mcplas: Particles stop moving if MC Plasma sub time step is less than 1e-15 s by default
+    -> mcplas: number of bins to resolve rf cycle is by default:           40
+    -> mcplas: The flag gravity_on_mcplas is set by default to .FALSE.
+    -> mcplas: electric_force_on is forced to .TRUE.
+    -> mcplas: electric_force_scale is set by default to 1.
+    -> mcplas: The flag magnetic_force_on_mcplas is set by default to .FALSE.
+    -> mcplas: The flag iondrag_force_on_mcplas is set by default to .FALSE.
+    -> mcplas: The flag thermophoretic_force_on_mcplas is set by default to .FALSE.
+    -> mcplas: The flag fluid_force_on_mcplas is forced to .TRUE.
+    -> mcplas: fluid_force_scale_mcplas is set by default to 1.
+    -> mcplas: V2024 MC source weighting algorithm turned on.
+    -> mcplas: V2024 MC random position algorithm (uniform volumetric distribution) turned on.
+    -> mcplas: V2024 MC random velocity algorithm (Box-Muller transform) turned on.
+    -> mcplas: V2024 MC random timestep between collisions.
+    -> mcplas: The number of MC iterations is set to  10
+    -> mcplas: Number of particles set for MC IEAD simulation is   6000000
+    -> mcplas: Maximum number of particles set for MC IEAD simulation is   6050000
+    -> mcplas: Done allocating ip_p_rate_avg
+   [Plasma] : The CCP frequency  27.0000 MHz is resolved to compute the CCP time step
+ 
+ 
+   [Restart] : Restart data DTF was run with version 20250014
+   [Restart] : Present DTF is running solver version 20250014
+ 
+ 
+   =============================================================================
+  |                       Summary of Solver Control Parameters                  |
+   =============================================================================
+  | Prop. |  Diff.  |        Solver        |    Relaxation    |      Limits     |
+   -----------------------------------------------------------------------------
+  |       |         |  Name  |Sweep|Criter.| Inertial| Linear |  Min.  |  Max.  |
+   =============================================================================
+  |     U |Upwind   | CGS+Pre|   50|1.0E-04|  2.0E-01|   -    |-1.0E+20| 1.0E+20|
+  |     V |Upwind   | CGS+Pre|   50|1.0E-04|  2.0E-01|   -    |-1.0E+20| 1.0E+20|
+  |P-Corr |    -    | AMG    |   50|1.0E-01|  2.0E-01|   -    |   -    |    -   |
+  |     P |    -    |    -   |  -  |   -   |   -     | 1.0E+00|-1.0E+20| 1.0E+20|
+  |   Rho |    -    |    -   |  -  |   -   |   -     | 1.0E+00| 1.0E-06| 1.0E+20|
+  |    Mu |    -    |    -   |  -  |   -   |   -     | 1.0E+00| 1.0E-10| 1.0E+02|
+  |Specie |Upwind   | CGS+Pre|   50|1.0E-04|  1.0E-05|   -    | 0.0E+00| 1.0E+00|
+  |Specie |Upwind   | CGS+Pre|   50|1.0E-04|  1.0E-05|   -    | 0.0E+00| 1.0E+00|
+  |Ele.Po |    -    | CGS+Pre|  500|1.0E-04|  1.0E-04|   -    |-1.0E+20| 1.0E+20|
+  |    Te |Upwind   | CGS+Pre|   50|1.0E-04|  1.0E-05|   -    | 1.0E-01| 2.0E+01|
+  |    Ne |Upwind   | CGS+Pre|   50|1.0E-04|  1.0E-05|   -    | 1.0E+05| 1.0E+20|
+   =============================================================================
+ 
+ 
+   =====================================
+   Summary of Geometry Data
+   =====================================
+ 
+   Smallest Volume   :   1.000000E-09
+ 
+   Largest  Volume   :   1.242961E-06
+ 
+   Smallest Angle    :   8.946623E+01 in zone  0 at face =       158
+ 
+   Location of face number       158 is x =   4.0192E-02 y =   1.8252E-18 z =   0.0000E+00
+ 
+ 
+   [Restart] : Reading restart data from the file :
+   D:\IDM Download\Compressed\AMAT Software\Tutorials\test ccp etch\ACE_Plasma-CCP_Etch.0090000.DTF
+ 
+    -> mcplas: seed for generating random number sequence:
+    -> mcplas: size(seed), seed            2  =   1877890322  2128957984
+    -> mcplas: volcon name:Si-Ring    calc_mcplas F
+    -> mcplas: volcon name:SiO2       calc_mcplas F
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas: volcon name:Plasma     calc_mcplas T
+    -> mcplas:   4788 out of   5231 cells mc
+    -> mcplas: isp_mc_to_ace
+       1 AR       1 AR           2 AR+      2 AR+          3 AR*      3 AR*          4 CF4      4 CF4          5 CF3+     5 CF3+         6 F        6 F            7 CF2+     7 CF2+         8 CF+      8 CF+          9 CF3      9 CF3         10 CF2     10 CF2         11 CF      11 CF          12 C       12 C           13 F2      13 F2          14 F+      14 F+          15 F-      15 F-     
+    -> mcplas: Species Properties:
+       specie     mass (kg)     Q (C)         lj_dia (A)   lj_pot (K)    cx_xsec (A^2)
+       ---------- ------------- ------------- ------------- -------------  -------------
+     AR           6.63354E-26   0.00000E+00   3.33000E+00   1.36500E+02   4.90000E+01
+     AR+          6.63354E-26   1.60218E-19   3.33000E+00   1.36500E+02   4.90000E+01
+     AR*          6.63354E-26   0.00000E+00   3.54000E+00   9.33000E+01   4.90000E+01
+     CF4          1.46135E-25   0.00000E+00   4.66200E+00   1.34000E+02   4.00000E+01
+     CF3+         1.14587E-25   1.60218E-19   4.32000E+00   1.21000E+02   4.00000E+01
+     F            3.15476E-26   0.00000E+00   2.96800E+00   1.12600E+02   4.00000E+01
+     CF2+         8.30395E-26   1.60218E-19   3.98000E+00   1.08000E+02   4.00000E+01
+     CF+          5.14920E-26   1.60218E-19   3.30000E+00   1.25000E+02   4.00000E+01
+     CF3          1.14587E-25   0.00000E+00   4.32000E+00   1.21000E+02   4.00000E+01
+     CF2          8.30395E-26   0.00000E+00   3.97700E+00   1.08000E+02   4.00000E+01
+     CF           5.14920E-26   0.00000E+00   3.63500E+00   9.42000E+01   4.00000E+01
+     C            1.99444E-26   0.00000E+00   3.38500E+00   3.06000E+01   4.00000E+01
+     F2           6.30952E-26   0.00000E+00   3.61000E+00   1.21000E+02   4.00000E+01
+     F+           3.15476E-26   1.60218E-19   2.96800E+00   1.12600E+02   4.00000E+01
+     F-           3.15476E-26  -1.60218E-19   2.96800E+00   1.12600E+02   4.00000E+01
+     ---- mcplas gas reactions -------- k     gen type
+     AR + AR > AR + AR               1.9645E-16 F elastic   
+     AR + AR+ > AR + AR+             6.7166E-16 F elastic   
+     AR + AR* > AR + AR*             2.0904E-16 F elastic   
+     AR + CF4 > AR + CF4             2.4120E-16 F elastic   
+     AR + CF3+ > AR + CF3+           5.9678E-16 F elastic   
+     AR + F > AR + F                 2.1881E-16 F elastic   
+     AR + CF2+ > AR + CF2+           6.3699E-16 F elastic   
+     AR + CF+ > AR + CF+             7.1843E-16 F elastic   
+     AR + CF3 > AR + CF3             2.3030E-16 F elastic   
+     AR + CF2 > AR + CF2             2.2427E-16 F elastic   
+     AR + CF > AR + CF               2.2982E-16 F elastic   
+     AR + C > AR + C                 2.9372E-16 F elastic   
+     AR + F2 > AR + F2               2.1604E-16 F elastic   
+     AR + F+ > AR + F+               8.3657E-16 F elastic   
+     AR + F- > AR + F-               8.3657E-16 F elastic   
+     AR > AR                         1.0000E+00 F chem2_net 
+     AR+ + AR > AR+ + AR             7.7035E-16 F elastic   
+     AR+ + AR > AR+ + AR             2.7632E-16 T charge_exc
+     AR+ + AR* > AR+ + AR*           6.7166E-16 F elastic   
+     AR+ + CF4 > AR+ + CF4           7.5102E-16 F elastic   
+     AR+ + F > AR+ + F               4.2860E-16 F elastic   
+     AR+ + CF3 > AR+ + CF3           7.4253E-16 F elastic   
+     AR+ + CF2 > AR+ + CF2           7.7155E-16 F elastic   
+     AR+ + CF > AR+ + CF             7.9329E-16 F elastic   
+     AR+ + C > AR+ + C               9.9292E-16 F elastic   
+     AR+ + F2 > AR+ + F2             5.5193E-16 F elastic   
+     AR+ > AR+                       1.0000E+00 F chem2_net 
+     AR* + AR > AR* + AR             2.0904E-16 F elastic   
+     AR* + AR+ > AR* + AR+           6.7166E-16 F elastic   
+     AR* + AR* > AR* + AR*           2.2201E-16 F elastic   
+     AR* + CF4 > AR* + CF4           2.5404E-16 F elastic   
+     AR* + CF3+ > AR* + CF3+         5.9678E-16 F elastic   
+     AR* + F > AR* + F               2.3365E-16 F elastic   
+     AR* + CF2+ > AR* + CF2+         6.3699E-16 F elastic   
+     AR* + CF+ > AR* + CF+           7.1843E-16 F elastic   
+     AR* + CF3 > AR* + CF3           2.4312E-16 F elastic   
+     AR* + CF2 > AR* + CF2           2.3734E-16 F elastic   
+     AR* + CF > AR* + CF             2.4389E-16 F elastic   
+     AR* + C > AR* + C               3.1237E-16 F elastic   
+     AR* + F2 > AR* + F2             2.2931E-16 F elastic   
+     AR* + F+ > AR* + F+             8.3657E-16 F elastic   
+     AR* + F- > AR* + F-             8.3657E-16 F elastic   
+     AR* > AR*                       1.0000E+00 F chem2_net 
+     CF4 + AR > CF4 + AR             2.4120E-16 F elastic   
+     CF4 + AR+ > CF4 + AR+           5.7267E-16 F elastic   
+     CF4 + AR* > CF4 + AR*           2.5404E-16 F elastic   
+     CF4 + CF4 > CF4 + CF4           2.5942E-16 F elastic   
+     CF4 + CF3+ > CF4 + CF3+         4.8267E-16 F elastic   
+     CF4 + F > CF4 + F               2.9152E-16 F elastic   
+     CF4 + CF2+ > CF4 + CF2+         5.3158E-16 F elastic   
+     CF4 + CF+ > CF4 + CF+           6.2688E-16 F elastic   
+     CF4 + CF3 > CF4 + CF3           2.5678E-16 F elastic   
+     CF4 + CF2 > CF4 + CF2           2.6161E-16 F elastic   
+     CF4 + CF > CF4 + CF             2.8457E-16 F elastic   
+     CF4 + C > CF4 + C               3.9428E-16 F elastic   
+     CF4 + F2 > CF4 + F2             2.6292E-16 F elastic   
+     CF4 + F+ > CF4 + F+             7.5940E-16 F elastic   
+     CF4 + F- > CF4 + F-             7.5940E-16 F elastic   
+     CF4 > CF4                       1.0000E+00 F chem2_net 
+     CF3+ + AR > CF3+ + AR           6.8447E-16 F elastic   
+     CF3+ + AR* > CF3+ + AR*         5.9678E-16 F elastic   
+     CF3+ + CF4 > CF3+ + CF4         6.3299E-16 F elastic   
+     CF3+ + F > CF3+ + F             3.9846E-16 F elastic   
+     CF3+ + CF3 > CF3+ + CF3         6.3585E-16 F elastic   
+     CF3+ + CF3 > CF3+ + CF3         1.7163E-16 T charge_exc
+     CF3+ + CF2 > CF3+ + CF2         6.7523E-16 F elastic   
+     CF3+ + CF > CF3+ + CF           7.1659E-16 F elastic   
+     CF3+ + C > CF3+ + C             9.4336E-16 F elastic   
+     CF3+ + F2 > CF3+ + F2           4.9203E-16 F elastic   
+     CF3+ > CF3+                     1.0000E+00 F chem2_net 
+     F + AR > F + AR                 2.1881E-16 F elastic   
+     F + AR+ > F + AR+               8.3657E-16 F elastic   
+     F + AR* > F + AR*               2.3365E-16 F elastic   
+     F + CF4 > F + CF4               2.9152E-16 F elastic   
+     F + CF3+ > F + CF3+             7.7774E-16 F elastic   
+     F + F > F + F                   2.2630E-16 F elastic   
+     F + CF2+ > F + CF2+             8.0900E-16 F elastic   
+     F + CF+ > F + CF+               8.7457E-16 F elastic   
+     F + CF3 > F + CF3               2.7240E-16 F elastic   
+     F + CF2 > F + CF2               2.5731E-16 F elastic   
+     F + CF > F + CF                 2.5144E-16 F elastic   
+     F + C > F + C                   2.9451E-16 F elastic   
+     F + F2 > F + F2                 2.4067E-16 F elastic   
+     F + F+ > F + F+                 9.7395E-16 F elastic   
+     F + F- > F + F-                 9.7395E-16 F elastic   
+     F > F                           1.0000E+00 F chem2_net 
+     CF2+ + AR > CF2+ + AR           7.3058E-16 F elastic   
+     CF2+ + AR* > CF2+ + AR*         6.3699E-16 F elastic   
+     CF2+ + CF4 > CF2+ + CF4         6.9713E-16 F elastic   
+     CF2+ + F > CF2+ + F             4.1448E-16 F elastic   
+     CF2+ + CF3 > CF2+ + CF3         6.9362E-16 F elastic   
+     CF2+ + CF2 > CF2+ + CF2         7.2713E-16 F elastic   
+     CF2+ + CF2 > CF2+ + CF2         2.0161E-16 T charge_exc
+     CF2+ + CF > CF2+ + CF           7.5762E-16 F elastic   
+     CF2+ + C > CF2+ + C             9.6956E-16 F elastic   
+     CF2+ + F2 > CF2+ + F2           5.2417E-16 F elastic   
+     CF2+ > CF2+                     1.0000E+00 F chem2_net 
+     CF+ + AR > CF+ + AR             8.2400E-16 F elastic   
+     CF+ + AR* > CF+ + AR*           7.1843E-16 F elastic   
+     CF+ + CF4 > CF+ + CF4           8.2211E-16 F elastic   
+     CF+ + F > CF+ + F               4.4807E-16 F elastic   
+     CF+ + CF3 > CF+ + CF3           8.0747E-16 F elastic   
+     CF+ + CF2 > CF+ + CF2           8.3107E-16 F elastic   
+     CF+ + CF > CF+ + CF             8.4178E-16 F elastic   
+     CF+ + CF > CF+ + CF             2.5602E-16 T charge_exc
+     CF+ + C > CF+ + C               1.0255E-15 F elastic   
+     CF+ + F2 > CF+ + F2             5.8943E-16 F elastic   
+     CF+ > CF+                       1.0000E+00 F chem2_net 
+     CF3 + AR > CF3 + AR             2.3030E-16 F elastic   
+     CF3 + AR+ > CF3 + AR+           5.9678E-16 F elastic   
+     CF3 + AR* > CF3 + AR*           2.4312E-16 F elastic   
+     CF3 + CF4 > CF3 + CF4           2.5678E-16 F elastic   
+     CF3 + CF3+ > CF3 + CF3+         5.1104E-16 F elastic   
+     CF3 + F > CF3 + F               2.7240E-16 F elastic   
+     CF3 + CF2+ > CF3 + CF2+         5.5747E-16 F elastic   
+     CF3 + CF+ > CF3 + CF+           6.4897E-16 F elastic   
+     CF3 + CF3 > CF3 + CF3           2.5156E-16 F elastic   
+     CF3 + CF2 > CF3 + CF2           2.5306E-16 F elastic   
+     CF3 + CF > CF3 + CF             2.7081E-16 F elastic   
+     CF3 + C > CF3 + C               3.6740E-16 F elastic   
+     CF3 + F2 > CF3 + F2             2.5146E-16 F elastic   
+     CF3 + F+ > CF3 + F+             7.7774E-16 F elastic   
+     CF3 + F- > CF3 + F-             7.7774E-16 F elastic   
+     CF3 > CF3                       1.0000E+00 F chem2_net 
+     CF2 + AR > CF2 + AR             2.2427E-16 F elastic   
+     CF2 + AR+ > CF2 + AR+           6.3699E-16 F elastic   
+     CF2 + AR* > CF2 + AR*           2.3734E-16 F elastic   
+     CF2 + CF4 > CF2 + CF4           2.6161E-16 F elastic   
+     CF2 + CF3+ > CF2 + CF3+         5.5747E-16 F elastic   
+     CF2 + F > CF2 + F               2.5731E-16 F elastic   
+     CF2 + CF2+ > CF2 + CF2+         6.0031E-16 F elastic   
+     CF2 + CF+ > CF2 + CF+           6.8613E-16 F elastic   
+     CF2 + CF3 > CF2 + CF3           2.5306E-16 F elastic   
+     CF2 + CF2 > CF2 + CF2           2.5044E-16 F elastic   
+     CF2 + CF > CF2 + CF             2.6216E-16 F elastic   
+     CF2 + C > CF2 + C               3.4474E-16 F elastic   
+     CF2 + F2 > CF2 + F2             2.4521E-16 F elastic   
+     CF2 + F+ > CF2 + F+             8.0900E-16 F elastic   
+     CF2 + F- > CF2 + F-             8.0900E-16 F elastic   
+     CF2 > CF2                       1.0000E+00 F chem2_net 
+     CF + AR > CF + AR               2.2982E-16 F elastic   
+     CF + AR+ > CF + AR+             7.1843E-16 F elastic   
+     CF + AR* > CF + AR*             2.4389E-16 F elastic   
+     CF + CF4 > CF + CF4             2.8457E-16 F elastic   
+     CF + CF3+ > CF + CF3+           6.4897E-16 F elastic   
+     CF + F > CF + F                 2.5144E-16 F elastic   
+     CF + CF2+ > CF + CF2+           6.8613E-16 F elastic   
+     CF + CF+ > CF + CF+             7.6235E-16 F elastic   
+     CF + CF3 > CF + CF3             2.7081E-16 F elastic   
+     CF + CF2 > CF + CF2             2.6216E-16 F elastic   
+     CF + CF > CF + CF               2.6569E-16 F elastic   
+     CF + C > CF + C                 3.3153E-16 F elastic   
+     CF + F2 > CF + F2               2.5144E-16 F elastic   
+     CF + F+ > CF + F+               8.7457E-16 F elastic   
+     CF + F- > CF + F-               8.7457E-16 F elastic   
+     CF > CF                         1.0000E+00 F chem2_net 
+     C + AR > C + AR                 2.9372E-16 F elastic   
+     C + AR+ > C + AR+               9.8782E-16 F elastic   
+     C + AR* > C + AR*               3.1237E-16 F elastic   
+     C + CF4 > C + CF4               3.9428E-16 F elastic   
+     C + CF3+ > C + CF3+             9.3851E-16 F elastic   
+     C + F > C + F                   2.9451E-16 F elastic   
+     C + CF2+ > C + CF2+             9.6458E-16 F elastic   
+     C + CF+ > C + CF+               1.0202E-15 F elastic   
+     C + CF3 > C + CF3               3.6740E-16 F elastic   
+     C + CF2 > C + CF2               3.4474E-16 F elastic   
+     C + CF > C + CF                 3.3153E-16 F elastic   
+     C + C > C + C                   3.7021E-16 F elastic   
+     C + F2 > C + F2                 3.2061E-16 F elastic   
+     C + F+ > C + F+                 1.1066E-15 F elastic   
+     C + F- > C + F-                 1.1066E-15 F elastic   
+     C > C                           1.0000E+00 F chem2_net 
+     F2 + AR > F2 + AR               2.1604E-16 F elastic   
+     F2 + AR+ > F2 + AR+             6.8023E-16 F elastic   
+     F2 + AR* > F2 + AR*             2.2931E-16 F elastic   
+     F2 + CF4 > F2 + CF4             2.6292E-16 F elastic   
+     F2 + CF3+ > F2 + CF3+           6.0640E-16 F elastic   
+     F2 + F > F2 + F                 2.4067E-16 F elastic   
+     F2 + CF2+ > F2 + CF2+           6.4602E-16 F elastic   
+     F2 + CF+ > F2 + CF+             7.2645E-16 F elastic   
+     F2 + CF3 > F2 + CF3             2.5146E-16 F elastic   
+     F2 + CF2 > F2 + CF2             2.4521E-16 F elastic   
+     F2 + CF > F2 + CF               2.5144E-16 F elastic   
+     F2 + C > F2 + C                 3.2061E-16 F elastic   
+     F2 + F2 > F2 + F2               2.3673E-16 F elastic   
+     F2 + F+ > F2 + F+               8.4347E-16 F elastic   
+     F2 + F- > F2 + F-               8.4347E-16 F elastic   
+     F2 > F2                         1.0000E+00 F chem2_net 
+     F+ + AR > F+ + AR               9.5950E-16 F elastic   
+     F+ + AR* > F+ + AR*             8.3657E-16 F elastic   
+     F+ + CF4 > F+ + CF4             9.9590E-16 F elastic   
+     F+ + F > F+ + F                 4.9899E-16 F elastic   
+     F+ + F > F+ + F                 3.2709E-16 T charge_exc
+     F+ + CF3 > F+ + CF3             9.6768E-16 F elastic   
+     F+ + CF2 > F+ + CF2             9.7990E-16 F elastic   
+     F+ + CF > F+ + CF               9.6570E-16 F elastic   
+     F+ + C > F+ + C                 1.1123E-15 F elastic   
+     F+ + F2 > F+ + F2               6.8438E-16 F elastic   
+     F+ > F+                         1.0000E+00 F chem2_net 
+     F- + AR > F- + AR               9.5950E-16 F elastic   
+     F- + AR* > F- + AR*             8.3657E-16 F elastic   
+     F- + CF4 > F- + CF4             9.9590E-16 F elastic   
+     F- + F > F- + F                 4.9899E-16 F elastic   
+     F- + F > F- + F                 3.2709E-16 T charge_exc
+     F- + CF3 > F- + CF3             9.6768E-16 F elastic   
+     F- + CF2 > F- + CF2             9.7990E-16 F elastic   
+     F- + CF > F- + CF               9.6570E-16 F elastic   
+     F- + C > F- + C                 1.1123E-15 F elastic   
+     F- + F2 > F- + F2               6.8438E-16 F elastic   
+     F- > F-                         1.0000E+00 F chem2_net 
+     -------------------------------------
+    -> mcplas: IEADF coordinate x, y (m): 0.18000E-01 0.20600E+00
+               nearest boundary face coordinate x, y (m): 0.18000E-01 0.20500E+00
+    -> mcplas: IEADF coordinate x, y (m): 0.18000E-01 0.20800E+00
+               nearest boundary face coordinate x, y (m): 0.18000E-01 0.20700E+00
+    -> mcplas: IEADF coordinate x, y (m): 0.18000E-01 0.21000E+00
+               nearest boundary face coordinate x, y (m): 0.18000E-01 0.20900E+00
+    -> mcplas: MC cells with active sources not found, please increase size of MC box (sub-mesh). Execution will be terminated.
+ 
+  Error Exit from CFD-ACE-SOLVER
+ 

@@ -1,0 +1,3 @@
+command line = C:\Program Files\Applied_Materials\ACE+Suite\2025.0\ACE_SOLVER\bin\CFD-SOLVER -dtf ACE-Plasma-ICP-Dep_fresh -sim 1 -job
+defaulting to the CFD-ACE-SOLVER-INTEL-MPI solver
+running c:\program files\applied_materials\ace+suite\2025.0\ace_solver\bin\cfd-ace-solver-intel-mpi.exe -dtf ACE-Plasma-ICP-Dep_fresh.DTF  -sim 1

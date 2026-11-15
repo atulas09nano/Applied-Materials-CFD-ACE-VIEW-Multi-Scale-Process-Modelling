@@ -1,0 +1,334 @@
+ Rate of Deposition (-ve) or Etching (+ve) in Microns/Minute on all Reacting Surfaces
+--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+
+ This file contains data for a steady-state simulation, at the end of iteration number 3000.
+ -------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 1:
+
+ Patch identification data:
+
+  Patch Name: CHUCK
+  Patch GID: 44_57
+  Patch Key: 44
+  Patch Global GID Index: 1
+  Patch Number of Faces: 20
+  Corresponding Boundary Condition Name: chuck
+  Corresponding Boundary Condition Record Number: 1
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+  -0.70463758375E-13     0.41012227421E-02    -0.25756295723E+00     0.00000000000E+00     0.18922531478E-04
+  -0.18325271861E-12     0.10665911590E-01    -0.25749134915E+00     0.00000000000E+00     0.80951188431E-04
+  -0.32496635247E-12     0.18914111678E-01    -0.25688911626E+00     0.00000000000E+00     0.16440990059E-03
+  -0.48107415502E-12     0.28000099778E-01    -0.25656724391E+00     0.00000000000E+00     0.26285303350E-03
+  -0.64731057225E-12     0.37675606601E-01    -0.25557213140E+00     0.00000000000E+00     0.37341213548E-03
+  -0.82155844564E-12     0.47817406550E-01    -0.25403348985E+00     0.00000000000E+00     0.49434852225E-03
+  -0.10025157211E-11     0.58349715789E-01    -0.25187864959E+00     0.00000000000E+00     0.62446632910E-03
+  -0.11892867147E-11     0.69220402570E-01    -0.25032629405E+00     0.00000000000E+00     0.76288029920E-03
+  -0.13812113276E-11     0.80391046962E-01    -0.24495312115E+00     0.00000000000E+00     0.90890236050E-03
+  -0.15777797581E-11     0.91831976848E-01    -0.24194541476E+00     0.00000000000E+00     0.10619787065E-02
+  -0.17764982674E-11     0.10339804842E+00    -0.23382617890E+00     0.00000000000E+00     0.11960688814E-02
+  -0.19730028504E-11     0.11483526221E+00    -0.22826011910E+00     0.00000000000E+00     0.12994285364E-02
+  -0.21649545659E-11     0.12600748411E+00    -0.21898836579E+00     0.00000000000E+00     0.13907997933E-02
+  -0.23518500232E-11     0.13688541515E+00    -0.21047422343E+00     0.00000000000E+00     0.14683663566E-02
+  -0.25330524480E-11     0.14743199293E+00    -0.19970110299E+00     0.00000000000E+00     0.15295889383E-02
+  -0.27077182538E-11     0.15759811798E+00    -0.18850611320E+00     0.00000000000E+00     0.15706920174E-02
+  -0.28746600634E-11     0.16731468101E+00    -0.17717126601E+00     0.00000000000E+00     0.15855490120E-02
+  -0.30320476620E-11     0.17647515750E+00    -0.16394005357E+00     0.00000000000E+00     0.15627805303E-02
+  -0.31765590855E-11     0.18488619819E+00    -0.15224783869E+00     0.00000000000E+00     0.14754158338E-02
+  -0.32977604275E-11     0.19194051539E+00    -0.13820669908E+00     0.00000000000E+00     0.11806851215E-02
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.205161E+00
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 2:
+
+ Patch identification data:
+
+  Patch Name: MAT_INTERF
+  Patch GID: 39_67
+  Patch Key: 39
+  Patch Global GID Index: 44
+  Patch Number of Faces: 7
+  Corresponding Boundary Condition Name: mat_interf
+  Corresponding Boundary Condition Record Number: 77
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+   0.23000000000E+00     0.69780219738E-01    -0.18616703791E+00     0.00000000000E+00     0.74617346844E-03
+   0.23000000000E+00     0.59090909056E-01    -0.17007502071E+00     0.00000000000E+00     0.63137755022E-03
+   0.23000000000E+00     0.48412698384E-01    -0.19819981558E+00     0.00000000000E+00     0.51658163201E-03
+   0.23000000000E+00     0.37755102020E-01    -0.18367118197E+00     0.00000000000E+00     0.40178571379E-03
+   0.23000000000E+00     0.27142857129E-01    -0.17415469394E+00     0.00000000000E+00     0.28698979558E-03
+   0.23000000000E+00     0.16666666659E-01    -0.19130355165E+00     0.00000000000E+00     0.17219387736E-03
+   0.23000000000E+00     0.71428571407E-02    -0.19166005875E+00     0.00000000000E+00     0.57397959150E-04
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.183609E+00
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 3:
+
+ Patch identification data:
+
+  Patch Name: MAT_INTERF
+  Patch GID: 40_67
+  Patch Key: 40
+  Patch Global GID Index: 45
+  Patch Number of Faces: 14
+  Corresponding Boundary Condition Name: mat_interf
+  Corresponding Boundary Condition Record Number: 78
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+   0.18072613954E+00     0.19863345809E+00    -0.20266443363E+00     0.00000000000E+00     0.20053079531E-02
+   0.18745099625E+00     0.19111145103E+00    -0.22313935689E+00     0.00000000000E+00     0.19293263792E-02
+   0.19374343347E+00     0.18322441623E+00    -0.15747025315E+00     0.00000000000E+00     0.18496555085E-02
+   0.19958353810E+00     0.17499712068E+00    -0.19339897521E+00     0.00000000000E+00     0.17665460228E-02
+   0.20495299541E+00     0.16645554679E+00    -0.16925403154E+00     0.00000000000E+00     0.16802606634E-02
+   0.20983507017E+00     0.15762671013E+00    -0.20108745230E+00     0.00000000000E+00     0.15910733796E-02
+   0.21421457754E+00     0.14853852923E+00    -0.18602321377E+00     0.00000000000E+00     0.14992611810E-02
+   0.21807787207E+00     0.13921971442E+00    -0.16739053501E+00     0.00000000000E+00     0.14051156402E-02
+   0.22141286137E+00     0.12969967262E+00    -0.19793651271E+00     0.00000000000E+00     0.13089326766E-02
+   0.22420903489E+00     0.12000845770E+00    -0.18217008140E+00     0.00000000000E+00     0.12110126453E-02
+   0.22645753427E+00     0.11017670696E+00    -0.17057453985E+00     0.00000000000E+00     0.11116664491E-02
+   0.22815125513E+00     0.10023559066E+00    -0.18066669199E+00     0.00000000000E+00     0.10112048696E-02
+   0.22928497992E+00     0.90216779536E-01    -0.15969715441E+00     0.00000000000E+00     0.90994363175E-03
+   0.22985555262E+00     0.80152396456E-01    -0.19195472321E+00     0.00000000000E+00     0.80820139198E-03
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.186221E+00
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 4:
+
+ Patch identification data:
+
+  Patch Name: MAT_INTERF
+  Patch GID: 41_67
+  Patch Key: 41
+  Patch Global GID Index: 46
+  Patch Number of Faces: 14
+  Corresponding Boundary Condition Name: mat_interf
+  Corresponding Boundary Condition Record Number: 79
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+   0.55045417334E-01     0.25485855199E+00    -0.10175573652E+00     0.00000000000E+00     0.25732218305E-02
+   0.65120385852E-01     0.25429310822E+00    -0.11254091338E+00     0.00000000000E+00     0.25675101088E-02
+   0.75147780980E-01     0.25316365182E+00    -0.12751374731E+00     0.00000000000E+00     0.25561004306E-02
+   0.85096022938E-01     0.25147358555E+00    -0.12587139666E+00     0.00000000000E+00     0.25390282176E-02
+   0.94933805679E-01     0.24922829469E+00    -0.13629316003E+00     0.00000000000E+00     0.25163488809E-02
+   0.10463021331E+00     0.24643500261E+00    -0.14925416231E+00     0.00000000000E+00     0.24881379382E-02
+   0.11415479238E+00     0.24310265514E+00    -0.16540704809E+00     0.00000000000E+00     0.24544790715E-02
+   0.12347762497E+00     0.23924182963E+00    -0.13462896970E+00     0.00000000000E+00     0.24154827102E-02
+   0.13256940782E+00     0.23486467098E+00    -0.17685829871E+00     0.00000000000E+00     0.23712714280E-02
+   0.14140151157E+00     0.22998486727E+00    -0.18025417729E+00     0.00000000000E+00     0.23219799802E-02
+   0.14994608168E+00     0.22461763942E+00    -0.14318948976E+00     0.00000000000E+00     0.22677682060E-02
+   0.15817615491E+00     0.21877975391E+00    -0.20658061480E+00     0.00000000000E+00     0.22088027913E-02
+   0.16606579197E+00     0.21248955391E+00    -0.23354196480E+00     0.00000000000E+00     0.21452679335E-02
+   0.17359026209E+00     0.20576697955E+00    -0.16300005781E+00     0.00000000000E+00     0.20773640386E-02
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.152238E+00
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 5:
+
+ Patch identification data:
+
+  Patch Name: MAT_INTERF
+  Patch GID: 42_67
+  Patch Key: 42
+  Patch Global GID Index: 47
+  Patch Number of Faces: 4
+  Corresponding Boundary Condition Name: mat_interf
+  Corresponding Boundary Condition Record Number: 80
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+   0.15000000000E-01     0.25500000021E+00    -0.34719482849E-01     0.00000000000E+00     0.25500000021E-02
+   0.25000000000E-01     0.25500000021E+00    -0.54169744235E-01     0.00000000000E+00     0.25500000021E-02
+   0.35000000000E-01     0.25500000021E+00    -0.72395653175E-01     0.00000000000E+00     0.25500000021E-02
+   0.45000000000E-01     0.25500000021E+00    -0.91057370261E-01     0.00000000000E+00     0.25500000021E-02
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.630856E-01
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 6:
+
+ Patch identification data:
+
+  Patch Name: MAT_INTERF
+  Patch GID: 43_67
+  Patch Key: 43
+  Patch Global GID Index: 48
+  Patch Number of Faces: 3
+  Corresponding Boundary Condition Name: mat_interf
+  Corresponding Boundary Condition Record Number: 81
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+   0.10000000000E-01     0.28002976205E+00    -0.23843331832E-02     0.00000000000E+00     0.27999999930E-02
+   0.10000000000E-01     0.27003086437E+00    -0.54505162367E-02     0.00000000000E+00     0.26999999949E-02
+   0.10000000000E-01     0.26003205148E+00    -0.10624568827E-01     0.00000000000E+00     0.25999999954E-02
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.605141E-02
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 7:
+
+ Patch identification data:
+
+  Patch Name: REACTOR_WALL
+  Patch GID: 50_68
+  Patch Key: 50
+  Patch Global GID Index: 50
+  Patch Number of Faces: 5
+  Corresponding Boundary Condition Name: reactor_wall
+  Corresponding Boundary Condition Record Number: 93
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+   0.45937895961E-02     0.28500000013E+00    -0.47716159312E-02     0.00000000000E+00     0.30815399316E-02
+  -0.62186312117E-02     0.28500000013E+00    -0.42293072633E-02     0.00000000000E+00     0.30815399316E-02
+  -0.16816092953E-01     0.28500000013E+00    -0.39358790216E-02     0.00000000000E+00     0.29590132637E-02
+  -0.26721949205E-01     0.28500000013E+00    -0.36382962200E-02     0.00000000000E+00     0.26873248023E-02
+  -0.35718277059E-01     0.28500000013E+00    -0.34679760417E-02     0.00000000000E+00     0.24405820772E-02
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.404380E-02
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 8:
+
+ Patch identification data:
+
+  Patch Name: REACTOR_WALL
+  Patch GID: 52_68
+  Patch Key: 52
+  Patch Global GID Index: 52
+  Patch Number of Faces: 9
+  Corresponding Boundary Condition Name: reactor_wall
+  Corresponding Boundary Condition Record Number: 95
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+  -0.37229597545E-01     0.23299999991E+00    -0.54948041564E-02     0.00000000000E+00     0.12910075434E-02
+  -0.31560006064E-01     0.23299999991E+00    -0.59484670848E-02     0.00000000000E+00     0.13510220857E-02
+  -0.25707192575E-01     0.23299999991E+00    -0.72144695984E-02     0.00000000000E+00     0.13763889996E-02
+  -0.19772725929E-01     0.23299999991E+00    -0.90497029298E-02     0.00000000000E+00     0.13890724565E-02
+  -0.13811041564E-01     0.23299999991E+00    -0.12337692250E-01     0.00000000000E+00     0.13890724565E-02
+  -0.80350994732E-02     0.23299999991E+00    -0.14935560487E-01     0.00000000000E+00     0.13025165567E-02
+  -0.29799996393E-02     0.23299999991E+00    -0.20831493617E-01     0.00000000000E+00     0.10531599650E-02
+   0.14600002149E-02     0.23299999991E+00    -0.22080619738E-01     0.00000000000E+00     0.10158799663E-02
+   0.58200000716E-02     0.23299999991E+00    -0.39887854036E-01     0.00000000000E+00     0.10158799663E-02
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.142269E-01
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 9:
+
+ Patch identification data:
+
+  Patch Name: REACTOR_WALL
+  Patch GID: 54_68
+  Patch Key: 54
+  Patch Global GID Index: 54
+  Patch Number of Faces: 9
+  Corresponding Boundary Condition Name: reactor_wall
+  Corresponding Boundary Condition Record Number: 97
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+   0.58200000716E-02     0.22500000018E+00    -0.83149031578E-01     0.00000000000E+00     0.98099996854E-03
+   0.14600002149E-02     0.22500000018E+00    -0.67323983411E-01     0.00000000000E+00     0.98099996854E-03
+  -0.29799996393E-02     0.22500000018E+00    -0.54576294822E-01     0.00000000000E+00     0.10169999674E-02
+  -0.80350994732E-02     0.22500000018E+00    -0.44528180914E-01     0.00000000000E+00     0.12577949597E-02
+  -0.13811041564E-01     0.22500000018E+00    -0.31916845831E-01     0.00000000000E+00     0.13413789831E-02
+  -0.19772725929E-01     0.22500000018E+00    -0.23786664823E-01     0.00000000000E+00     0.13413789831E-02
+  -0.25707192575E-01     0.22500000018E+00    -0.20234886959E-01     0.00000000000E+00     0.13291310097E-02
+  -0.31560006064E-01     0.22500000018E+00    -0.15972272073E-01     0.00000000000E+00     0.13046350628E-02
+  -0.37229597545E-01     0.22500000018E+00    -0.14010093266E-01     0.00000000000E+00     0.12466811056E-02
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.369485E-01
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Data for Surface-Reaction BC Patch Number 10:
+
+ Patch identification data:
+
+  Patch Name: REACTOR_WALL
+  Patch GID: 56_68
+  Patch Key: 56
+  Patch Global GID Index: 56
+  Patch Number of Faces: 7
+  Corresponding Boundary Condition Name: reactor_wall
+  Corresponding Boundary Condition Record Number: 99
+
+ Detailed face-by-face deposition / etching data: 
+
+                                             Deposition/Etch Rate
+          xf                    yf          for Species SIO2_B(B)       Sum Y_wall             Face Area
+  -0.37194951780E-01     0.19500000014E+00    -0.15869640878E-01     0.00000000000E+00     0.10939688065E-02
+  -0.31584855341E-01     0.19500000014E+00    -0.17622232466E-01     0.00000000000E+00     0.10939688065E-02
+  -0.25897621961E-01     0.19500000014E+00    -0.21318600256E-01     0.00000000000E+00     0.11240522136E-02
+  -0.19978977756E-01     0.19500000014E+00    -0.28289927628E-01     0.00000000000E+00     0.11842190278E-02
+  -0.13842875483E-01     0.19500000014E+00    -0.40466497841E-01     0.00000000000E+00     0.12088608607E-02
+  -0.79281895188E-02     0.19500000014E+00    -0.59035872691E-01     0.00000000000E+00     0.10978666670E-02
+  -0.25565733941E-02     0.19500000014E+00    -0.92223733189E-01     0.00000000000E+00     0.99706362313E-03
+
+ Summary deposition / etching data:
+
+  Average deposition / etching rate (Notes 1A) on the patch for species SIO2_B(B): -0.384344E-01
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+ Notes, Explanations, and Definitions:
+
+  (1A): Total net rate of deposition / etching on the patch for the species, as given by the net volumetric rate of deposition / etching for the species divided by the total surface area of the patch.
