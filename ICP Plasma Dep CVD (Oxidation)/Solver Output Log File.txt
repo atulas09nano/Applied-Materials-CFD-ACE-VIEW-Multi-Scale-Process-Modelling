@@ -1,0 +1,2873 @@
+ *******************************************************************************
+ *                                                                             *
+ * CCCCC FFFFF DDDD     AAA  CCCCC EEEEE   SSSS  OOO  L   V       V EEEEE RRR  *
+ * C     F     D   D   A   A C     E       S    O   O L    V     V  E     R  R *
+ * C     FFFF  D   D = AAAAA C     EEEE  = SSSS O   O L     V   V   EEEE  RRR  *
+ * C     F     D   D   A   A C     E          S O   O L      V V    E     R R  *
+ * CCCCC F     DDDD    A   A CCCCC EEEEE   SSSS  OOO  LLLLL   V     EEEEE R  R *
+ *                                                                             *
+ *       Version          : 2025.00.14.189                                     *
+ *       Build Date       : 09/24/2024 14:44:00                                *
+ *       Build OS         : Windows                                            *
+ *       Build OS Release : 10                                                 *
+ *       Build OS Version : 10.0.17763                                         *
+ *       Build Machine    : VAZ-WPA-108                                        *
+ *                                                                             *
+ *      Copyright(C) 1994-2025 Applied Materials. All Rights Reserved.         *
+ *                                                                             *
+ *******************************************************************************
+ 
+ 
+  ===============================================================
+     CFD-ACE-SOLVER Run Platform Information :
+  ===============================================================
+     Run Date           : 10/22/2025 01:32:32
+     Run OS             :
+     Run OS Release     :
+     Run OS Version     :
+     Run Machine        : 20WLS4PPF3QPVTS
+  ===============================================================
+  ===============================================================
+ 
+    This simulation is running in double precision serial mode
+ 
+  =====================================
+    Summary of Input Information
+  =====================================
+    Problem has been set up using : CFD-ACE+
+  ================
+    Model Options
+  ================
+    Shared
+    -------
+    Model Name        : ACE-Plasma-ICP-Dep
+    Modules           : FLOW HEAT SPECIES_SOLUTION MAGNETIC PLASMA
+    DTF File Name     : ACE-Plasma-ICP-Dep.DTF
+    Simulation Number = 1
+    Diagnostic        : OFF
+    Geometry          : Two Dimensional Axisymmetric
+    Iterations        =         3000
+    Time Dependence   : Steady
+    Output Controls
+      Output Start    =            0
+      Output End      =     10000000
+      Output Interval =         3000
+ 
+  =======================================
+    Summary of 2D Axisymmetric Grid Data
+  =======================================
+    Total No. of nodes       =       1194
+    No. of line faces        =       2377
+    Total No. of faces       =       2377
+    No. of tri cells         =        107
+    No. of quad cells        =       1077
+    Total No. of cells       =       1184
+ 
+   ====================================================================
+  |                         Summary of Properties                      |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          57 |      1     | plasma    |    Fluid    |       160     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |      Conduct. |   Kinetic Theory  |     -        |
+         |      Sp. Heat |   Jannaf          |     -        |
+         |     Diffusion | Schmidt           |     -        |
+         |   Coll. Freq. |   Constant        |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          58 |      2     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          59 |      3     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          60 |      4     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          61 |      5     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          62 |      6     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          63 |      7     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          64 |      8     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          65 |      9     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          66 |     10     | coil      |    Solid    |         4     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    8.900E+03 |
+         |      Conduct. |   Constant        |    5.000E+02 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          67 |     11     | air       |    Solid    |       368     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Constant        |    1.000E+00 |
+         |      Conduct. |   Constant        |    1.000E+00 |
+         |      Sp. Heat |   Constant        |    1.000E+03 |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Constant        |    1.000E-04 |
+   ====================================================================
+  |   Key No.   |  Zone No.  |  VC Name  |  Mat. Type  | No. of Cells  |
+   --------------------------------------------------------------------
+  |          68 |     12     | plasma    |    Fluid    |       620     |
+   --------------------------------------------------------------------
+         | Property Name | Evaluation Method |    Value     |
+   ====================================================================
+         |       Density |   Gas_Law         |     -        |
+         |     Viscosity |   Mix_Suther      |     -        |
+         |      Conduct. |   Kinetic Theory  |     -        |
+         |      Sp. Heat |   Jannaf          |     -        |
+         |     Diffusion | Schmidt           |     -        |
+         |   Coll. Freq. |   Constant        |     -        |
+         |   Elec. Diff. | Einstein_Relation |     -        |
+         |  Rel. Permtt. |   Constant        |    1.000E+00 |
+         |  Rel. Permea. |   Constant        |    1.000E+00 |
+         | Elec. Condu.  |   Plasma          |     -        |
+   ====================================================================
+ 
+   ====================================
+    Summary of Multi-Component Species
+   ====================================
+ 
+   The following Chemical Components have been defined:
+ 
+ ----------------------------------------------------------------- -----------------------------------
+ Species Name      Mol Wt.      A_VIS       B_VIS       Coll. Dia.   Energy      Acc. Coeff   Heat Acc
+ -----------------------------------------------------------------------------------------------------
+ 
+  AR                 3.995E+01   1.966E-06   1.475E+02   3.330E+00   1.365E+02   9.317E-01   9.317E-01
+  AR*                3.995E+01   2.200E-06   3.793E+02   3.540E+00   9.330E+01   9.317E-01   9.317E-01
+  AR+                3.995E+01   1.966E-06   1.475E+02   3.330E+00   1.365E+02   9.317E-01   9.317E-01
+  H                  1.008E+00   6.890E-07   9.669E+01   2.050E+00   1.450E+02   9.317E-01   9.317E-01
+  H2                 2.016E+00   6.890E-07   9.669E+01   2.920E+00   3.800E+01   9.317E-01   9.317E-01
+  O                  1.600E+01   1.405E-06   1.115E+02   2.750E+00   8.000E+01   9.317E-01   9.317E-01
+  O+                 1.600E+01   1.405E-06   1.115E+02   2.750E+00   8.000E+01   9.317E-01   9.317E-01
+  O-                 1.600E+01   1.405E-06   1.115E+02   2.750E+00   8.000E+01   9.317E-01   9.317E-01
+  O2                 3.200E+01   1.783E-06   1.560E+02   3.458E+00   1.074E+02   9.317E-01   9.317E-01
+  O2+                3.200E+01   1.783E-06   1.560E+02   3.458E+00   1.074E+02   9.317E-01   9.317E-01
+  SIH2               3.010E+01   1.405E-06   1.115E+02   3.803E+00   1.331E+02   9.317E-01   9.317E-01
+  SIH2+              3.010E+01   1.571E-06   3.842E+02   3.800E+00   1.331E+02   9.317E-01   9.317E-01
+  SIH4               3.212E+01   1.405E-06   1.115E+02   4.084E+00   2.076E+02   9.317E-01   9.317E-01
+  SIO2               6.008E+01   1.405E-06   1.115E+02   3.706E+00   2.954E+03   9.317E-01   9.317E-01
+  SIO2_B(B)          6.008E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   9.317E-01
+  SIG(OH)H2_S(S)     4.711E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+  SIG(OH)H_S(S)      4.610E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+  SIG(OH)_S(S)       4.509E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+  SIG3H_S(S)         4.509E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+  SIG3OH_S(S)        6.109E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+  SIGH2_S(S)         3.010E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+  SIGH3_S(S)         3.111E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+  SIGH_S(S)          2.909E+01   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+ -----------------------------------------------------------------------------------------------------
+ 
+ 
+   =================================
+    Summary of Multi-Step Reactions
+   =================================
+ 
+   Units : kmol-m-s-K (or eV); R_Heat (reaction heat) calculated at 298 K
+ 
+   Kinetics Algorithm : Non-Stiff
+ 
+   No. of chemical reaction mechanisms :  1
+ 
+   Info for mechanism no.:  1
+ 
+   Reaction Name : Ar_O2_SiH4
+   Reaction Type : General Rate
+   No. of reaction steps:  15
+ 
+   ------------------------------------------------------------------------------
+ 
+     1 : AR + e --> AR+ + 2 e                        R_Heat = 1.5822E+01 (eV)
+         Rate_f : Kf(cross section integral)[AR]*[e]
+ 
+     2 : AR + e --> AR* + e                          R_Heat = 1.1423E+01 (eV)
+         Charge balanced by setting RHS e number =  1
+         Rate_f :  0.722760E+13 * Te**     0.000 * Exp(   -11.940/Te) * [AR]*[e]
+ 
+     3 : AR* + e --> AR+ + 2 e                       R_Heat = 4.3991E+00 (eV)
+         Rate_f :  0.180690E+15 * Te**     0.100 * Exp(    -5.220/Te) * [AR*]*[e]
+ 
+     4 : AR + e --> AR + e                           M_Trans= 2.6508E+03 (J/eV)
+         Rate_f : Kf(cross section integral)[AR]*[e]
+ 
+     5 : O2 + e --> O2+ + 2 e                        R_Heat = 1.2133E+01 (eV)
+         Rate_f :  0.542070E+12 * Te**     2.000 * Exp(   -12.600/Te) * [O2]*[e]
+ 
+     6 : O2 + e --> O + O-                           R_Heat = 3.6367E+00 (eV)
+         Rate_f :  0.530024E+11 * Te**     0.000 * Exp(    -4.400/Te) * [O2]*[e]
+ 
+     7 : O2+ + O- --> O2 + O                         R_Heat =-1.0234E+09 (J/kmol)
+         Rate_f :  0.903450E+14 * T **     0.000 * Exp( 0.00E+00/T) * [O2+]*[O-]
+ 
+     8 : O- + O+ --> 2.0 O                           R_Heat =-1.1721E+09 (J/kmol)
+         Rate_f :  0.150575E+15 * T **     0.000 * Exp( 0.00E+00/T) * [O-]*[O+]
+ 
+     9 : O- + e --> O + 2 e                          R_Heat = 1.5277E+00 (eV)
+         Rate_f :  0.120460E+15 * Te**     0.000 * Exp(    -5.500/Te) * [O-]*[e]
+ 
+    10 : O2 + e --> O- + O+ + e                      R_Heat = 1.7311E+01 (eV)
+         Rate_f :  0.427633E+11 * Te**     0.500 * Exp(   -17.000/Te) * [O2]*[e]
+ 
+    11 : O2 + e --> O + O+ + 2 e                     R_Heat = 1.8838E+01 (eV)
+         Rate_f :  0.319219E+12 * Te**     0.900 * Exp(   -20.000/Te) * [O2]*[e]
+ 
+    12 : O + e --> O+ + 2 e                          R_Heat = 1.3674E+01 (eV)
+         Rate_f :  0.542070E+13 * Te**     0.700 * Exp(   -13.600/Te) * [O]*[e]
+ 
+    13 : O2 + e --> 2.0 O + e                        R_Heat = 5.1644E+00 (eV)
+         Rate_f :  0.252966E+13 * Te**     0.000 * Exp(    -5.600/Te) * [O2]*[e]
+ 
+    14 : SIH4 + e --> 2.0 H + SIH2 + e               R_Heat = 6.9541E+00 (eV)
+         Rate_f :  0.570980E+15 * Te**    -1.000 * Exp(   -10.640/Te) * [SIH4]*[e]
+ 
+    15 : SIH4 + e --> 2.0 H + SIH2+ + 2 e            R_Heat = 1.6078E+01 (eV)
+         Charge balanced by setting RHS e number =  2
+         Rate_f :  0.463169E+15 * Te**    -1.200 * Exp(   -15.700/Te) * [SIH4]*[e]
+ 
+   =====================================================================================
+ 
+ 
+   ==============================
+    Summary of Surface Reactions
+   ==============================
+ 
+   No. of surface reaction mechanisms :  2
+ 
+   Info for mechanism : HDP_SIO2
+ 
+   No. of reaction steps:  47
+ 
+   -----------------------------------------------------
+   -----------------------------------------------------
+   No. of Surface Sites :     1
+   -----------------------------------------------------
+   Site No.   Site Density    No. of Species
+      1       1.168300E-08          8
+   -----------------------------------------------------
+     Site Species
+        1     SIG(OH)H2_S(S)
+        2     SIG(OH)H_S(S)
+        3     SIG(OH)_S(S)
+        4     SIG3H_S(S)
+        5     SIG3OH_S(S)
+        6     SIGH2_S(S)
+        7     SIGH3_S(S)
+        8     SIGH_S(S)
+   -----------------------------------------------------
+ 
+ 
+   Info for Reaction Step:   1
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2 +SIG3OH_S(S) --->H2 +SIO2_B(B) +SIGH_S(S)
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   2
+   Reaction Type : Sticking Coefficient
+ 
+   SIO2 --->SIO2_B(B)
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIO2]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   3
+   Reaction Type : Sticking Coefficient
+ 
+   O +SIG3H_S(S) --->SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       4.000000E-01
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   4
+   Reaction Type : Sticking Coefficient
+ 
+   O +SIGH3_S(S) --->SIG(OH)H2_S(
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       4.000000E-01
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   5
+   Reaction Type : Sticking Coefficient
+ 
+   O +SIGH_S(S) --->SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       4.000000E-01
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   6
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIG(OH)H_S(S --->SIG(OH)H2_S(
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   7
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIGH2_S(S) --->SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   8
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIG(OH)_S(S) --->SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   9
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIGH_S(S) --->SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  10
+   Reaction Type : Sticking Coefficient
+ 
+   AR* --->AR
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR*]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  11
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG(OH)H2_S( --->AR +H2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding AR+    & 1 AR
+     Concentration Exponents  :       [AR+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  12
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG(OH)H2_S( --->H2 +O2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding O2+    & 1 O2
+     Concentration Exponents  :       [O2+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  13
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG(OH)H2_S( --->H2 +O +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding O+     & 1 O
+     Concentration Exponents  :       [O+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  14
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG(OH)H2_S( --->H2 +SIH2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding SIH2+  & 1 SIH2
+     Concentration Exponents  :       [SIH2+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  15
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG3H_S(S) --->AR +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  16
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG3H_S(S) --->O2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  17
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG3H_S(S) --->SIH2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  18
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIGH3_S(S) --->AR +SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  19
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIGH3_S(S) --->O2 +SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  20
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIGH3_S(S) --->SIH2 +SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  21
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG(OH)H_S(S --->AR +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  22
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG(OH)H_S(S --->O +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  23
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG(OH)H_S(S --->O2 +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  24
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG(OH)H_S(S --->SIH2 +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  25
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIGH2_S(S) --->AR +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  26
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIGH2_S(S) --->O +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  27
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIGH2_S(S) --->O2 +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  28
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIGH2_S(S) --->SIH2 +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  29
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG(OH)_S(S) --->AR +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  30
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG(OH)_S(S) --->O +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  31
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG(OH)_S(S) --->O2 +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  32
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG(OH)_S(S) --->SIH2 +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  33
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIGH_S(S) --->AR +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  34
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIGH_S(S) --->O +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  35
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIGH_S(S) --->O2 +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  36
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIGH_S(S) --->SIH2 +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  37
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG3OH_S(S) --->AR +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  38
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG3OH_S(S) --->O +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  39
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG3OH_S(S) --->O2 +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  40
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG3OH_S(S) --->SIH2 +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  41
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG3OH_S(S) --->H2 +SIO2_B(B) +SIGH2_S(S)
+ 
+ Warning: Mass balance not satisfied in the above  surface reaction
+  Total mass of reactants =    91.1936200000000
+  Total mass of products =    92.2015600000000
+ 
+ One or more steps in the above reaction mechanism do not
+ conserve mass. This is not strictly required for surface
+ reactions but you should be certain that the lack of mass
+ conservation is intentional and not the result of input error.
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  42
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG3H_S(S) --->SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  43
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIGH3_S(S) --->SIG(OH)H2_S(
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  44
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIO2_B(B) --->AR +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.023*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding AR+    & 1 AR
+     Concentration Exponents  :       [AR+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  45
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIO2_B(B) --->O +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.012*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding O+     & 1 O
+     Concentration Exponents  :       [O+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  46
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIO2_B(B) --->O2 +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.016*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding O2+    & 1 O2
+     Concentration Exponents  :       [O2+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  47
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIO2_B(B) --->SIH2 +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.016*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding SIH2+  & 1 SIH2
+     Concentration Exponents  :       [SIH2+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+   Info for mechanism : HDP_SIO2_NOBIAS
+ 
+   No. of reaction steps:  47
+ 
+   -----------------------------------------------------
+   -----------------------------------------------------
+   No. of Surface Sites :     1
+   -----------------------------------------------------
+   Site No.   Site Density    No. of Species
+      1       1.168300E-08          8
+   -----------------------------------------------------
+     Site Species
+        1     SIG(OH)H2_S(S)
+        2     SIG(OH)H_S(S)
+        3     SIG(OH)_S(S)
+        4     SIG3H_S(S)
+        5     SIG3OH_S(S)
+        6     SIGH2_S(S)
+        7     SIGH3_S(S)
+        8     SIGH_S(S)
+   -----------------------------------------------------
+ 
+ 
+   Info for Reaction Step:   1
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2 +SIG3OH_S(S) --->H2 +SIO2_B(B) +SIGH_S(S)
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   2
+   Reaction Type : Sticking Coefficient
+ 
+   SIO2 --->SIO2_B(B)
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIO2]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   3
+   Reaction Type : Sticking Coefficient
+ 
+   O +SIG3H_S(S) --->SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       4.000000E-01
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   4
+   Reaction Type : Sticking Coefficient
+ 
+   O +SIGH3_S(S) --->SIG(OH)H2_S(
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       4.000000E-01
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   5
+   Reaction Type : Sticking Coefficient
+ 
+   O +SIGH_S(S) --->SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       4.000000E-01
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   6
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIG(OH)H_S(S --->SIG(OH)H2_S(
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   7
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIGH2_S(S) --->SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   8
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIG(OH)_S(S) --->SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:   9
+   Reaction Type : Sticking Coefficient
+ 
+   H +SIGH_S(S) --->SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [H]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  10
+   Reaction Type : Sticking Coefficient
+ 
+   AR* --->AR
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR*]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  11
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG(OH)H2_S( --->AR +H2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding AR+    & 1 AR
+     Concentration Exponents  :       [AR+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  12
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG(OH)H2_S( --->H2 +O2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding O2+    & 1 O2
+     Concentration Exponents  :       [O2+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  13
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG(OH)H2_S( --->H2 +O +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding O+     & 1 O
+     Concentration Exponents  :       [O+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  14
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG(OH)H2_S( --->H2 +SIH2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.200*MAX(0, (Eion** 0.50 -   0.00** 0.50)** 1.00) excluding SIH2+  & 1 SIH2
+     Concentration Exponents  :       [SIH2+]*[SIG(OH)H2_S(]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  15
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG3H_S(S) --->AR +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  16
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG3H_S(S) --->O2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  17
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG3H_S(S) --->SIH2 +SIG3H_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  18
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIGH3_S(S) --->AR +SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  19
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIGH3_S(S) --->O2 +SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  20
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIGH3_S(S) --->SIH2 +SIGH3_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  21
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG(OH)H_S(S --->AR +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  22
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG(OH)H_S(S --->O +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  23
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG(OH)H_S(S --->O2 +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  24
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG(OH)H_S(S --->SIH2 +SIG(OH)H_S(S
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG(OH)H_S(S]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  25
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIGH2_S(S) --->AR +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  26
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIGH2_S(S) --->O +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  27
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIGH2_S(S) --->O2 +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  28
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIGH2_S(S) --->SIH2 +SIGH2_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIGH2_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  29
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG(OH)_S(S) --->AR +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  30
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG(OH)_S(S) --->O +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  31
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG(OH)_S(S) --->O2 +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  32
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG(OH)_S(S) --->SIH2 +SIG(OH)_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG(OH)_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  33
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIGH_S(S) --->AR +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  34
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIGH_S(S) --->O +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  35
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIGH_S(S) --->O2 +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  36
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIGH_S(S) --->SIH2 +SIGH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIGH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  37
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIG3OH_S(S) --->AR +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [AR+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  38
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG3OH_S(S) --->O +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  39
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIG3OH_S(S) --->O2 +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O2+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  40
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG3OH_S(S) --->SIH2 +SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  41
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIG3OH_S(S) --->H2 +SIO2_B(B) +SIGH2_S(S)
+ 
+ Warning: Mass balance not satisfied in the above  surface reaction
+  Total mass of reactants =    91.1936200000000
+  Total mass of products =    92.2015600000000
+ 
+ One or more steps in the above reaction mechanism do not
+ conserve mass. This is not strictly required for surface
+ reactions but you should be certain that the lack of mass
+ conservation is intentional and not the result of input error.
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [SIH2+]*[SIG3OH_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  42
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIG3H_S(S) --->SIG3OH_S(S)
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIG3H_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  43
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIGH3_S(S) --->SIG(OH)H2_S(
+ 
+   No Transferred Specie defined in this step
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Concentration Exponents  :       [O+]*[SIGH3_S(S)]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  44
+   Reaction Type : Sticking Coefficient
+ 
+   AR+ +SIO2_B(B) --->AR +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.023*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding AR+    & 1 AR
+     Concentration Exponents  :       [AR+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  45
+   Reaction Type : Sticking Coefficient
+ 
+   O+ +SIO2_B(B) --->O +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.012*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding O+     & 1 O
+     Concentration Exponents  :       [O+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  46
+   Reaction Type : Sticking Coefficient
+ 
+   O2+ +SIO2_B(B) --->O2 +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.016*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding O2+    & 1 O2
+     Concentration Exponents  :       [O2+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+ 
+   Info for Reaction Step:  47
+   Reaction Type : Sticking Coefficient
+ 
+   SIH2+ +SIO2_B(B) --->SIH2 +SIO2
+ 
+   Transferred Species Name: SIO2_B(B)
+   Transferred Species Density:       2.200000E+03
+ 
+   Forward rate :
+ 
+     Pre-exponential factor   :       1.000000E+00
+     Temperature exponent     :       0.000000E+00
+     Activation Temperature   :       0.000000E+00
+     Ion_E_yield factor       : 0.016*MAX(0, (Eion** 0.50 -  35.00** 0.50)** 1.00) excluding SIH2+  & 1 SIH2
+     Concentration Exponents  :       [SIH2+]
+ 
+ 
+   Reverse rate :
+     Not applicable for Sticking Coefficient
+ 
+   -----------------------------------------------------
+   =====================================================================================
+ 
+   [Chemistry] : Volume  reaction rate computations start at iteration =            1
+ 
+   [Chemistry] : Surface reaction rate computations start at iteration =            1
+ 
+  =====================================
+  Total No. of Vmpot Source VCs =       9
+  =====================================
+     -----------------------------
+     VC No. =    1
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    2
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    3
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    4
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    5
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    6
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    7
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    8
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+     -----------------------------
+     VC No. =    9
+     VC Name. = coil
+     No. of Cells =    4
+     Evaluation Method =    2
+     Target Power (Watt) =   4.000000E+02
+     Initial Coil Current (A) =   1.000000E+01
+     Field Frequency =   1.256637E+07
+     -----------------------------
+  =====================================
+   [Plasma] : Relaxation for current adjustment to target power is  0.500
+ 
+   [Plasma] : Surface heating due to kinetic energy of ions is included.
+ 
+   [Plasma] : Ion Joule heating is included.
+ 
+   [Plasma] : EEDF_TYPE is set to  0 to assume Maxwellian Electron Energy Distribution
+ 
+  Sheath: recNum bias_patch rf rfV dcV =       1      1  0.1356E+08  0.0000E+00 -0.1500E+02
+ 
+   =============================================================================
+  |                       Summary of Solver Control Parameters                  |
+   =============================================================================
+  | Prop. |  Diff.  |        Solver        |    Relaxation    |      Limits     |
+   -----------------------------------------------------------------------------
+  |       |         |  Name  |Sweep|Criter.| Inertial| Linear |  Min.  |  Max.  |
+   =============================================================================
+  |     U |Upwind   | CGS+Pre|   50|1.0E-04|  2.0E-01|   -    |-1.0E+20| 1.0E+20|
+  |     V |Upwind   | CGS+Pre|   50|1.0E-04|  2.0E-01|   -    |-1.0E+20| 1.0E+20|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |P-Corr |    -    | CGS+Pre|  500|1.0E-04|  2.0E-01|   -    |   -    |    -   |
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |     P |    -    |    -   |  -  |   -   |   -     | 1.0E+00|-1.3E+00| 1.0E+20|
+  |   Rho |    -    |    -   |  -  |   -   |   -     | 1.0E+00| 1.0E-06| 1.0E+20|
+  |    Mu |    -    |    -   |  -  |   -   |   -     | 1.0E+00| 1.0E-10| 1.0E+02|
+  |    H0 |Upwind   | CGS+Pre|  500|1.0E-04|  1.0E-03|   -    |-1.0E+20| 1.0E+20|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |     T |    -    |    -   |  -  |   -   |   -     | 9.0E-01| 2.0E+02| 2.0E+03|
+  |Specie |Upwind   | CGS+Pre|   50|1.0E-04|  1.0E-03|   -    | 0.0E+00| 1.0E+00|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |Mag.Po |    -    | CGS+Pre|   50|1.0E-04|  1.0E-03|   -    |-1.0E+20| 1.0E+20|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+  |    Te |Upwind   | CGS+Pre|   50|1.0E-04|  1.0E-02|   -    | 1.0E-01| 1.0E+01|
+  |                      |--             ILU Levels of Fill:           0        |
+  |                      |--              ILU Expected Fill:        1.00        |
+   =============================================================================
+ 
+ 
+   =====================================
+   Summary of Geometry Data
+   =====================================
+ 
+   Smallest Volume   :   5.763702E-08
+ 
+   Largest  Volume   :   7.059506E-05
+ 
+   Smallest Angle    :   3.740466E+01 in zone  0 at face =       157
+ 
+   Location of face number       157 is x =   5.1754E-02 y =   2.6927E-01 z =   0.0000E+00
+ 
+   =============================
+   Start of Iterative Cycle.....
+   =============================
+ 
+ 
+   The minimum limit ( 1.000E-01) of variable    Te was subceeded at       404 cells.
+ 
+  ==================================================
+   Outputting Summaries at Iteration #:         3000
+  ==================================================
+ 
+ 
+   Species Summary at Boundaries
+  ==============================================================
+        Species Summary of  AR
+  ==============================================================
+      Total Volume Source                 -8.481267E-07
+             Name                Type         Flux Integral (kg-AR/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall          2.113981E-07
+    77   MAT_INTERF               Wall          4.413810E-08
+    78   MAT_INTERF               Wall          2.368315E-07
+    79   MAT_INTERF               Wall          2.636409E-07
+    80   MAT_INTERF               Wall          3.027432E-08
+    81   MAT_INTERF               Wall          2.273033E-09
+    93   REACTOR_WALL             Wall          2.481879E-09
+    94   REACTOR_EXIT             Outlet       -3.317754E-06
+    95   REACTOR_WALL             Wall          7.134977E-09
+    96   NOZZLE                   Inlet         5.679450E-06
+    97   REACTOR_WALL             Wall          1.907733E-08
+    98   REACTOR_EXIT             Outlet       -2.345983E-06
+    99   REACTOR_WALL             Wall          1.482207E-08
+  ==============================================================
+      Total Imbalance                     -3.419426E-10
+ 
+ 
+  ==============================================================
+        Species Summary of  AR*
+  ==============================================================
+      Total Volume Source                  6.832126E-08
+             Name                Type         Flux Integral (kg-AR*/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -1.221520E-08
+    77   MAT_INTERF               Wall         -2.427078E-09
+    78   MAT_INTERF               Wall         -1.722446E-08
+    79   MAT_INTERF               Wall         -2.450154E-08
+    80   MAT_INTERF               Wall         -3.922910E-09
+    81   MAT_INTERF               Wall         -4.603928E-10
+    93   REACTOR_WALL             Wall         -5.076083E-10
+    94   REACTOR_EXIT             Outlet       -4.395270E-10
+    95   REACTOR_WALL             Wall         -9.987676E-10
+    96   NOZZLE                   Inlet        -6.853210E-10
+    97   REACTOR_WALL             Wall         -2.444178E-09
+    98   REACTOR_EXIT             Outlet       -6.206843E-10
+    99   REACTOR_WALL             Wall         -1.966115E-09
+  ==============================================================
+      Total Imbalance                     -9.252493E-11
+ 
+ 
+  ==============================================================
+        Species Summary of  AR+
+  ==============================================================
+      Total Volume Source                  7.798055E-07
+             Name                Type         Flux Integral (kg-AR+/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -1.991829E-07
+    77   MAT_INTERF               Wall         -4.171103E-08
+    78   MAT_INTERF               Wall         -2.196070E-07
+    79   MAT_INTERF               Wall         -2.391394E-07
+    80   MAT_INTERF               Wall         -2.635141E-08
+    81   MAT_INTERF               Wall         -1.812641E-09
+    93   REACTOR_WALL             Wall         -1.974271E-09
+    94   REACTOR_EXIT             Outlet       -1.838468E-11
+    95   REACTOR_WALL             Wall         -6.136209E-09
+    96   NOZZLE                   Inlet        -1.433814E-08
+    97   REACTOR_WALL             Wall         -1.663315E-08
+    98   REACTOR_EXIT             Outlet       -4.496433E-11
+    99   REACTOR_WALL             Wall         -1.285596E-08
+  ==============================================================
+      Total Imbalance                     -5.241569E-14
+ 
+ 
+  ==============================================================
+        Species Summary of  H
+  ==============================================================
+      Total Volume Source                  3.134895E-08
+             Name                Type         Flux Integral (kg-H/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -4.851488E-09
+    77   MAT_INTERF               Wall         -6.760029E-10
+    78   MAT_INTERF               Wall         -4.682524E-09
+    79   MAT_INTERF               Wall         -6.246402E-09
+    80   MAT_INTERF               Wall         -7.986076E-10
+    81   MAT_INTERF               Wall         -6.164894E-11
+    93   REACTOR_WALL             Wall         -7.395607E-11
+    94   REACTOR_EXIT             Outlet       -4.821969E-09
+    95   REACTOR_WALL             Wall         -1.994721E-10
+    96   NOZZLE                   Inlet        -1.551976E-09
+    97   REACTOR_WALL             Wall         -4.962331E-10
+    98   REACTOR_EXIT             Outlet       -6.553035E-09
+    99   REACTOR_WALL             Wall         -3.728728E-10
+  ==============================================================
+      Total Imbalance                     -3.723873E-11
+ 
+ 
+  ==============================================================
+        Species Summary of  H2
+  ==============================================================
+      Total Volume Source                  0.000000E+00
+             Name                Type         Flux Integral (kg-H2/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall          9.716490E-09
+    77   MAT_INTERF               Wall          1.352560E-09
+    78   MAT_INTERF               Wall          9.370855E-09
+    79   MAT_INTERF               Wall          1.250846E-08
+    80   MAT_INTERF               Wall          1.600731E-09
+    81   MAT_INTERF               Wall          1.234077E-10
+    93   REACTOR_WALL             Wall          1.479925E-10
+    94   REACTOR_EXIT             Outlet       -1.176256E-08
+    95   REACTOR_WALL             Wall          3.999261E-10
+    96   NOZZLE                   Inlet        -3.819856E-09
+    97   REACTOR_WALL             Wall          9.945491E-10
+    98   REACTOR_EXIT             Outlet       -2.144767E-08
+    99   REACTOR_WALL             Wall          7.467230E-10
+  ==============================================================
+      Total Imbalance                     -6.838704E-11
+ 
+ 
+  ==============================================================
+        Species Summary of  O
+  ==============================================================
+      Total Volume Source                  6.042613E-07
+             Name                Type         Flux Integral (kg-O/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -5.464177E-08
+    77   MAT_INTERF               Wall         -4.911087E-09
+    78   MAT_INTERF               Wall         -4.549277E-08
+    79   MAT_INTERF               Wall         -7.368903E-08
+    80   MAT_INTERF               Wall         -1.064803E-08
+    81   MAT_INTERF               Wall         -8.492900E-10
+    93   REACTOR_WALL             Wall         -1.038986E-09
+    94   REACTOR_EXIT             Outlet       -1.223121E-07
+    95   REACTOR_WALL             Wall         -2.732623E-09
+    96   NOZZLE                   Inlet        -4.488211E-08
+    97   REACTOR_WALL             Wall         -6.547014E-09
+    98   REACTOR_EXIT             Outlet       -2.329178E-07
+    99   REACTOR_WALL             Wall         -4.820668E-09
+  ==============================================================
+      Total Imbalance                     -1.221891E-09
+ 
+ 
+  ==============================================================
+        Species Summary of  O+
+  ==============================================================
+      Total Volume Source                  8.906327E-08
+             Name                Type         Flux Integral (kg-O+/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -2.247492E-08
+    77   MAT_INTERF               Wall         -5.823750E-09
+    78   MAT_INTERF               Wall         -2.888073E-08
+    79   MAT_INTERF               Wall         -2.558662E-08
+    80   MAT_INTERF               Wall         -2.056467E-09
+    81   MAT_INTERF               Wall         -1.301576E-10
+    93   REACTOR_WALL             Wall         -1.355827E-10
+    94   REACTOR_EXIT             Outlet       -1.212427E-12
+    95   REACTOR_WALL             Wall         -4.414636E-10
+    96   NOZZLE                   Inlet        -1.076259E-09
+    97   REACTOR_WALL             Wall         -1.346406E-09
+    98   REACTOR_EXIT             Outlet       -3.818583E-12
+    99   REACTOR_WALL             Wall         -1.105834E-09
+  ==============================================================
+      Total Imbalance                      4.234700E-14
+ 
+ 
+  ==============================================================
+        Species Summary of  O-
+  ==============================================================
+      Total Volume Source                  9.911142E-13
+             Name                Type         Flux Integral (kg-O-/sec/rad)
+  ==============================================================
+    94   REACTOR_EXIT             Outlet       -3.193008E-13
+    96   NOZZLE                   Inlet        -5.700419E-13
+    98   REACTOR_EXIT             Outlet       -2.294875E-13
+  ==============================================================
+      Total Imbalance                     -1.277161E-13
+ 
+ 
+  ==============================================================
+        Species Summary of  O2
+  ==============================================================
+      Total Volume Source                 -7.345677E-07
+             Name                Type         Flux Integral (kg-O2/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall          9.710849E-09
+    77   MAT_INTERF               Wall          1.394412E-09
+    78   MAT_INTERF               Wall          8.929380E-09
+    79   MAT_INTERF               Wall          1.433702E-08
+    80   MAT_INTERF               Wall          2.308680E-09
+    81   MAT_INTERF               Wall          1.884258E-10
+    93   REACTOR_WALL             Wall          2.447216E-10
+    94   REACTOR_EXIT             Outlet       -1.872136E-06
+    95   REACTOR_WALL             Wall          6.108744E-10
+    96   NOZZLE                   Inlet         3.648434E-06
+    97   REACTOR_WALL             Wall          1.347205E-09
+    98   REACTOR_EXIT             Outlet       -1.080464E-06
+    99   REACTOR_WALL             Wall          9.381661E-10
+  ==============================================================
+      Total Imbalance                      1.275826E-09
+ 
+ 
+  ==============================================================
+        Species Summary of  O2+
+  ==============================================================
+      Total Volume Source                  4.124215E-08
+             Name                Type         Flux Integral (kg-O2+/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -9.710848E-09
+    77   MAT_INTERF               Wall         -1.394412E-09
+    78   MAT_INTERF               Wall         -8.929380E-09
+    79   MAT_INTERF               Wall         -1.433702E-08
+    80   MAT_INTERF               Wall         -2.308680E-09
+    81   MAT_INTERF               Wall         -1.884258E-10
+    93   REACTOR_WALL             Wall         -2.447216E-10
+    94   REACTOR_EXIT             Outlet       -2.607606E-12
+    95   REACTOR_WALL             Wall         -6.108744E-10
+    96   NOZZLE                   Inlet        -1.225931E-09
+    97   REACTOR_WALL             Wall         -1.347205E-09
+    98   REACTOR_EXIT             Outlet       -4.066698E-12
+    99   REACTOR_WALL             Wall         -9.381660E-10
+  ==============================================================
+      Total Imbalance                     -1.875372E-13
+ 
+ 
+  ==============================================================
+        Species Summary of  SIH2
+  ==============================================================
+      Total Volume Source                  4.332602E-07
+             Name                Type         Flux Integral (kg-SIH2/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -6.631442E-08
+    77   MAT_INTERF               Wall         -1.004514E-08
+    78   MAT_INTERF               Wall         -6.882939E-08
+    79   MAT_INTERF               Wall         -8.191142E-08
+    80   MAT_INTERF               Wall         -6.770951E-09
+    81   MAT_INTERF               Wall         -3.829265E-10
+    93   REACTOR_WALL             Wall         -3.074696E-10
+    94   REACTOR_EXIT             Outlet       -7.230747E-08
+    95   REACTOR_WALL             Wall         -1.258488E-09
+    96   NOZZLE                   Inlet        -2.208528E-08
+    97   REACTOR_WALL             Wall         -4.461170E-09
+    98   REACTOR_EXIT             Outlet       -9.515940E-08
+    99   REACTOR_WALL             Wall         -3.853267E-09
+  ==============================================================
+      Total Imbalance                     -4.265702E-10
+ 
+ 
+  ==============================================================
+        Species Summary of  SIH2+
+  ==============================================================
+      Total Volume Source                  3.484634E-08
+             Name                Type         Flux Integral (kg-SIH2+/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -6.229522E-09
+    77   MAT_INTERF               Wall         -5.316132E-11
+    78   MAT_INTERF               Wall         -1.134019E-09
+    79   MAT_INTERF               Wall         -1.147753E-08
+    80   MAT_INTERF               Wall         -5.180211E-09
+    81   MAT_INTERF               Wall         -5.384434E-10
+    93   REACTOR_WALL             Wall         -7.974516E-10
+    94   REACTOR_EXIT             Outlet       -9.200104E-12
+    95   REACTOR_WALL             Wall         -1.727386E-09
+    96   NOZZLE                   Inlet        -3.004851E-09
+    97   REACTOR_WALL             Wall         -2.964198E-09
+    98   REACTOR_EXIT             Outlet       -9.425848E-12
+    99   REACTOR_WALL             Wall         -1.721814E-09
+  ==============================================================
+      Total Imbalance                     -8.833512E-13
+ 
+ 
+  ==============================================================
+        Species Summary of  SIH4
+  ==============================================================
+      Total Volume Source                 -4.994555E-07
+             Name                Type         Flux Integral (kg-SIH4/sec/rad)
+  ==============================================================
+    94   REACTOR_EXIT             Outlet       -5.663562E-07
+    96   NOZZLE                   Inlet         1.315977E-06
+    98   REACTOR_EXIT             Outlet       -2.492300E-07
+  ==============================================================
+      Total Imbalance                      9.356049E-10
+ 
+ 
+  ==============================================================
+        Species Summary of  SIO2
+  ==============================================================
+      Total Volume Source                  0.000000E+00
+             Name                Type         Flux Integral (kg-SIO2/sec/rad)
+  ==============================================================
+     1   CHUCK                    Wall         -2.289659E-35
+    77   MAT_INTERF               Wall         -2.458250E-36
+    78   MAT_INTERF               Wall         -1.894633E-35
+    79   MAT_INTERF               Wall         -3.468887E-35
+    80   MAT_INTERF               Wall         -1.294064E-35
+    81   MAT_INTERF               Wall         -7.338710E-36
+    93   REACTOR_WALL             Wall         -1.405941E-35
+    94   REACTOR_EXIT             Outlet       -3.644377E-36
+    95   REACTOR_WALL             Wall         -1.122259E-35
+    96   NOZZLE                   Inlet        -6.675430E-37
+    97   REACTOR_WALL             Wall         -1.252060E-35
+    98   REACTOR_EXIT             Outlet       -2.839103E-36
+    99   REACTOR_WALL             Wall         -8.532235E-36
+  ==============================================================
+      Total Imbalance                     -1.527552E-34
+ 
+ 
+  ==============================================================
+ Species Summary of All Gas Species
+  ==============================================================
+      Total Volume Source(+)               4.235164736272E-22
+         Name                     Type         Flux Integral (kg/sec/rad)
+  ==============================================================
+     1 + CHUCK                    Wall         -1.447956361757E-07
+    77 + MAT_INTERF               Wall         -2.015657942590E-08
+    78 + MAT_INTERF               Wall         -1.396485735193E-07
+    79 + MAT_INTERF               Wall         -1.864025533822E-07
+    80 + MAT_INTERF               Wall         -2.385353364462E-08
+    81 + MAT_INTERF               Wall         -1.839058912263E-09
+    93 + REACTOR_WALL             Wall         -2.205454041382E-09
+    94 + REACTOR_EXIT             Outlet       -5.967920795003E-06
+    95 + REACTOR_WALL             Wall         -5.959506105310E-09
+    96 + NOZZLE                   Inlet         1.055119038476E-05
+    97 + REACTOR_WALL             Wall         -1.482047263855E-08
+    98 + REACTOR_EXIT             Outlet       -4.032438819552E-06
+    99 + REACTOR_WALL             Wall         -1.112773497341E-08
+  ==============================================================
+      Total Imbalance(+)                   2.166738545197E-11
+ 
+  ==============================================================
+   Electron Energy Loss (Volumetric Reaction) [Watt]
+  ==============================================================
+   VC    1  plasma               0.20417E+02
+   VC   12  plasma               0.37958E+03
+   ------------------------------------------------------------
+   Total E-Energy Loss (W):      0.40000E+03
+  ==============================================================
+ 
+  ==============================================================
+   ICP Power Absorbed by Electrons [Watt]
+  ==============================================================
+   VC    1  plasma               0.65052E-01
+   VC   12  plasma               0.39993E+03
+   ------------------------------------------------------------
+   Total  ICP  Power (Watts):    0.40000E+03
+  ==============================================================
+ 
+  ==============================================================
+   Heat Release (Volumetric Reaction) to Gas [Watt]
+  ==============================================================
+   VC    1  plasma               0.87103E-01
+   VC   12  plasma               0.53407E+01
+   ------------------------------------------------------------
+   Total Gas Heating P (W):      0.54278E+01
+  ==============================================================
+ 
+ ----------------------------------------
+ ===================================================
+ 
+ Power Absorbed in Different Domains [Watt]
+ 
+  key  NAME                  SOURCE_VALUE
+   57  plasma                0.6505E-01
+   58  coil                  0.1672E-04
+   59  coil                  0.2452E-04
+   60  coil                  0.3211E-04
+   61  coil                  0.3586E-04
+   62  coil                  0.3411E-04
+   63  coil                  0.2721E-04
+   64  coil                  0.1684E-04
+   65  coil                  0.9254E-05
+   66  coil                  0.4173E-05
+   67  air                   0.1409E-02
+   68  plasma                0.3999E+03
+ 
+ ----------------------------------------
+ Source Current [A]
+ 
+    1    0.7465E+01
+    2    0.7465E+01
+    3    0.7465E+01
+    4    0.7465E+01
+    5    0.7465E+01
+    6    0.7465E+01
+    7    0.7465E+01
+    8    0.7465E+01
+    9    0.7465E+01
+ 
+ ----------------------------------------
+  ==================================================
+   End of Outputting Summaries at Iteration #:         3000
+  ==================================================
+ 
+   =============================
+   End   of Iterative Cycle.....
+   =============================
+ 
+ 
+         Final Time   Elapsed CPU Time=  2.249860E+02 Delta-time=  2.249860E+02
+ 
+         Final Time   Elapsed Wall Clock=  2.249676E+02 Delta-Wall Clock=  2.249676E+02
+ 
+  Normal Termination
